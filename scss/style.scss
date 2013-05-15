@@ -5,3 +5,21 @@
 
 @import "compass/reset";
 @import "reveal";
+
+body {
+	background-color: #d2d3d5;
+	position: relative;
+}
+
+$bg_w: 1500px;
+$bg_h: 900px;
+
+.bg {
+	position: absolute;
+	bottom: 0;
+	height: $bg_h;
+	width: $bg_w;
+	left: 50%;
+	margin-left: (-$bg_w/2);
+	background: url("../images/bg.jpg") 0 0 no-repeat;
+}
