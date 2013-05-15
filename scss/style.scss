@@ -11,6 +11,8 @@
 
 	$orange: #FF4700;
 
+	$green: #7FB47A;
+
 /* 	Global
 	------------------------------------------------------- */
 
@@ -62,7 +64,7 @@
 
 	.num-sold {
 		@extend %car-header;
-		background-color: $orange;
+		background-color: $green;
 		color: #fff;
 		font-weight: bold;
 		padding: 8px;

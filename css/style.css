@@ -1504,7 +1504,7 @@ body {
 	------------------------------------------------------- */
 /* 	Global
 	------------------------------------------------------- */
-/* line 17, ../scss/style.scss */
+/* line 19, ../scss/style.scss */
 body {
   background-color: #d2d3d5;
   position: relative;
@@ -1512,7 +1512,7 @@ body {
   font-size: 22px;
 }
 
-/* line 27, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 .bg {
   position: absolute;
   bottom: 0;
@@ -1525,41 +1525,41 @@ body {
 
 /* 	Car slide
 	------------------------------------------------------- */
-/* line 40, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 .car-image {
   display: block;
   margin: auto;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 .car-name, .star-count, .num-sold {
   display: inline-block;
   vertical-align: middle;
   margin: 0 8px;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 53, ../scss/style.scss */
 .car-name {
   font-size: 2em;
   line-height: 1.8em;
 }
 
-/* line 57, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .star-count {
   background-color: #ff4700;
   padding: 8px;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 .num-sold {
-  background-color: #ff4700;
+  background-color: #7fb47a;
   color: #fff;
   font-weight: bold;
   padding: 8px;
   border-radius: 4px;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .car-blurb {
   text-align: left;
   display: block;
