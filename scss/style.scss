@@ -6,20 +6,71 @@
 @import "compass/reset";
 @import "reveal";
 
-body {
-	background-color: #d2d3d5;
-	position: relative;
-}
+/* 	Colors
+	------------------------------------------------------- */
 
-$bg_w: 1500px;
-$bg_h: 900px;
+	$orange: #FF4700;
 
-.bg {
-	position: absolute;
-	bottom: 0;
-	height: $bg_h;
-	width: $bg_w;
-	left: 50%;
-	margin-left: (-$bg_w/2);
-	background: url("../images/bg.jpg") 0 0 no-repeat;
-}
+/* 	Global
+	------------------------------------------------------- */
+
+	body {
+		background-color: #d2d3d5;
+		position: relative;
+		font-family: Helvetica, sans-serif;
+		font-size: 22px;
+	}
+
+	$bg_w: 1500px;
+	$bg_h: 900px;
+
+	.bg {
+		position: absolute;
+		bottom: 0;
+		height: $bg_h;
+		width: $bg_w;
+		left: 50%;
+		margin-left: (-$bg_w/2);
+		background: url("../images/bg.jpg") 0 0 no-repeat;
+	}
+
+/* 	Car slide
+	------------------------------------------------------- */
+
+	.car-image {
+		display: block;
+		margin: auto;
+	}
+
+	%car-header {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 8px;
+	}
+
+	.car-name {
+		@extend %car-header;
+		font-size: 2em;
+		line-height: 1.8em;
+	}
+
+	.star-count {
+		@extend %car-header;
+		background-color: $orange;
+		padding: 8px;
+	}
+
+	.num-sold {
+		@extend %car-header;
+		background-color: $orange;
+		color: #fff;
+		font-weight: bold;
+		padding: 8px;
+		border-radius: 4px;
+	}
+
+	.car-blurb {
+		text-align: left;
+		display: block;
+		padding: 0 100px;
+	}

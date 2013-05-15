@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,50 +19,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-1.9.3-p194@cf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -78,11 +77,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*********************************************
  * RESET STYLES
  *********************************************/
-/* line 28, ../scss/_reveal.scss */
-html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal iframe,
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal blockquote, .reveal pre,
+/* line 27, ../scss/_reveal.scss */
+html, body, .reveal div, .reveal applet, .reveal object, .reveal iframe, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal blockquote, .reveal pre,
 .reveal a, .reveal abbr, .reveal acronym, .reveal address, .reveal big, .reveal cite, .reveal code,
-.reveal del, .reveal dfn, .reveal em, .reveal img, .reveal ins, .reveal kbd, .reveal q, .reveal s, .reveal samp,
+.reveal del, .reveal dfn, .reveal em, .reveal ins, .reveal kbd, .reveal q, .reveal s, .reveal samp,
 .reveal small, .reveal strike, .reveal strong, .reveal sub, .reveal sup, .reveal tt, .reveal var,
 .reveal b, .reveal u, .reveal i, .reveal center,
 .reveal dl, .reveal dt, .reveal dd, .reveal ol, .reveal ul, .reveal li,
@@ -100,7 +98,7 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
   vertical-align: baseline;
 }
 
-/* line 38, ../scss/_reveal.scss */
+/* line 37, ../scss/_reveal.scss */
 .reveal article, .reveal aside, .reveal details, .reveal figcaption, .reveal figure,
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block;
@@ -109,7 +107,7 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-/* line 48, ../scss/_reveal.scss */
+/* line 47, ../scss/_reveal.scss */
 html,
 body {
   width: 100%;
@@ -117,13 +115,13 @@ body {
   overflow: hidden;
 }
 
-/* line 54, ../scss/_reveal.scss */
+/* line 53, ../scss/_reveal.scss */
 body {
   position: relative;
   line-height: 1;
 }
 
-/* line 59, ../scss/_reveal.scss */
+/* line 58, ../scss/_reveal.scss */
 ::selection {
   background: #FF5E99;
   color: #fff;
@@ -133,7 +131,7 @@ body {
 /*********************************************
  * HEADERS
  *********************************************/
-/* line 75, ../scss/_reveal.scss */
+/* line 74, ../scss/_reveal.scss */
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -146,30 +144,10 @@ body {
   word-wrap: break-word;
 }
 
-/* line 83, ../scss/_reveal.scss */
-.reveal h1 {
-  font-size: 3.77em;
-}
-
-/* line 84, ../scss/_reveal.scss */
-.reveal h2 {
-  font-size: 2.11em;
-}
-
-/* line 85, ../scss/_reveal.scss */
-.reveal h3 {
-  font-size: 1.55em;
-}
-
-/* line 86, ../scss/_reveal.scss */
-.reveal h4 {
-  font-size: 1em;
-}
-
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
-/* line 93, ../scss/_reveal.scss */
+/* line 87, ../scss/_reveal.scss */
 .reveal .slides section .fragment {
   opacity: 0;
   -webkit-transition: all .2s ease;
@@ -179,17 +157,17 @@ body {
   transition: all .2s ease;
 }
 
-/* line 102, ../scss/_reveal.scss */
+/* line 96, ../scss/_reveal.scss */
 .reveal .slides section .fragment.visible {
   opacity: 1;
 }
 
-/* line 106, ../scss/_reveal.scss */
+/* line 100, ../scss/_reveal.scss */
 .reveal .slides section .fragment.grow {
   opacity: 1;
 }
 
-/* line 109, ../scss/_reveal.scss */
+/* line 103, ../scss/_reveal.scss */
 .reveal .slides section .fragment.grow.visible {
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
@@ -198,12 +176,12 @@ body {
   transform: scale(1.3);
 }
 
-/* line 117, ../scss/_reveal.scss */
+/* line 111, ../scss/_reveal.scss */
 .reveal .slides section .fragment.shrink {
   opacity: 1;
 }
 
-/* line 120, ../scss/_reveal.scss */
+/* line 114, ../scss/_reveal.scss */
 .reveal .slides section .fragment.shrink.visible {
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
@@ -212,7 +190,7 @@ body {
   transform: scale(0.7);
 }
 
-/* line 128, ../scss/_reveal.scss */
+/* line 122, ../scss/_reveal.scss */
 .reveal .slides section .fragment.zoom-in {
   opacity: 0;
   -webkit-transform: scale(0.1);
@@ -222,7 +200,7 @@ body {
   transform: scale(0.1);
 }
 
-/* line 138, ../scss/_reveal.scss */
+/* line 132, ../scss/_reveal.scss */
 .reveal .slides section .fragment.zoom-in.visible {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -232,7 +210,7 @@ body {
   transform: scale(1);
 }
 
-/* line 148, ../scss/_reveal.scss */
+/* line 142, ../scss/_reveal.scss */
 .reveal .slides section .fragment.roll-in {
   opacity: 0;
   -webkit-transform: rotateX(90deg);
@@ -242,7 +220,7 @@ body {
   transform: rotateX(90deg);
 }
 
-/* line 157, ../scss/_reveal.scss */
+/* line 151, ../scss/_reveal.scss */
 .reveal .slides section .fragment.roll-in.visible {
   opacity: 1;
   -webkit-transform: rotateX(0);
@@ -252,34 +230,34 @@ body {
   transform: rotateX(0);
 }
 
-/* line 167, ../scss/_reveal.scss */
+/* line 161, ../scss/_reveal.scss */
 .reveal .slides section .fragment.fade-out {
   opacity: 1;
 }
 
-/* line 170, ../scss/_reveal.scss */
+/* line 164, ../scss/_reveal.scss */
 .reveal .slides section .fragment.fade-out.visible {
   opacity: 0;
 }
 
-/* line 176, ../scss/_reveal.scss */
+/* line 170, ../scss/_reveal.scss */
 .reveal .slides section .fragment.highlight-red,
 .reveal .slides section .fragment.highlight-green,
 .reveal .slides section .fragment.highlight-blue {
   opacity: 1;
 }
 
-/* line 179, ../scss/_reveal.scss */
+/* line 173, ../scss/_reveal.scss */
 .reveal .slides section .fragment.highlight-red.visible {
   color: #ff2c2d;
 }
 
-/* line 182, ../scss/_reveal.scss */
+/* line 176, ../scss/_reveal.scss */
 .reveal .slides section .fragment.highlight-green.visible {
   color: #17ff2e;
 }
 
-/* line 185, ../scss/_reveal.scss */
+/* line 179, ../scss/_reveal.scss */
 .reveal .slides section .fragment.highlight-blue.visible {
   color: #1b91ff;
 }
@@ -288,14 +266,14 @@ body {
  * DEFAULT ELEMENT STYLES
  *********************************************/
 /* Fixes issue in Chrome where italic fonts did not appear when printing to PDF */
-/* line 195, ../scss/_reveal.scss */
+/* line 189, ../scss/_reveal.scss */
 .reveal:after {
   content: '';
   font-style: italic;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
-/* line 203, ../scss/_reveal.scss */
+/* line 197, ../scss/_reveal.scss */
 .reveal img,
 .reveal video,
 .reveal iframe {
@@ -304,24 +282,24 @@ body {
 }
 
 /** Prevents layering issues in certain browser/transition combinations */
-/* line 209, ../scss/_reveal.scss */
+/* line 203, ../scss/_reveal.scss */
 .reveal a {
   position: relative;
 }
 
-/* line 214, ../scss/_reveal.scss */
+/* line 208, ../scss/_reveal.scss */
 .reveal strong,
 .reveal b {
   font-weight: bold;
 }
 
-/* line 219, ../scss/_reveal.scss */
+/* line 213, ../scss/_reveal.scss */
 .reveal em,
 .reveal i {
   font-style: italic;
 }
 
-/* line 224, ../scss/_reveal.scss */
+/* line 218, ../scss/_reveal.scss */
 .reveal ol,
 .reveal ul {
   display: inline-block;
@@ -329,27 +307,27 @@ body {
   margin: 0 0 0 1em;
 }
 
-/* line 231, ../scss/_reveal.scss */
+/* line 225, ../scss/_reveal.scss */
 .reveal ol {
   list-style-type: decimal;
 }
 
-/* line 235, ../scss/_reveal.scss */
+/* line 229, ../scss/_reveal.scss */
 .reveal ul {
   list-style-type: disc;
 }
 
-/* line 239, ../scss/_reveal.scss */
+/* line 233, ../scss/_reveal.scss */
 .reveal ul ul {
   list-style-type: square;
 }
 
-/* line 243, ../scss/_reveal.scss */
+/* line 237, ../scss/_reveal.scss */
 .reveal ul ul ul {
   list-style-type: circle;
 }
 
-/* line 250, ../scss/_reveal.scss */
+/* line 244, ../scss/_reveal.scss */
 .reveal ul ul,
 .reveal ul ol,
 .reveal ol ol,
@@ -358,19 +336,19 @@ body {
   margin-left: 40px;
 }
 
-/* line 255, ../scss/_reveal.scss */
+/* line 249, ../scss/_reveal.scss */
 .reveal p {
   margin-bottom: 10px;
   line-height: 1.2em;
 }
 
-/* line 261, ../scss/_reveal.scss */
+/* line 255, ../scss/_reveal.scss */
 .reveal q,
 .reveal blockquote {
   quotes: none;
 }
 
-/* line 265, ../scss/_reveal.scss */
+/* line 259, ../scss/_reveal.scss */
 .reveal blockquote {
   display: block;
   position: relative;
@@ -382,18 +360,18 @@ body {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 277, ../scss/_reveal.scss */
+/* line 271, ../scss/_reveal.scss */
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
   display: inline-block;
 }
 
-/* line 281, ../scss/_reveal.scss */
+/* line 275, ../scss/_reveal.scss */
 .reveal q {
   font-style: italic;
 }
 
-/* line 285, ../scss/_reveal.scss */
+/* line 279, ../scss/_reveal.scss */
 .reveal pre {
   display: block;
   position: relative;
@@ -407,12 +385,12 @@ body {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* line 300, ../scss/_reveal.scss */
+/* line 294, ../scss/_reveal.scss */
 .reveal code {
   font-family: monospace;
 }
 
-/* line 303, ../scss/_reveal.scss */
+/* line 297, ../scss/_reveal.scss */
 .reveal pre code {
   padding: 5px;
   overflow: auto;
@@ -420,29 +398,29 @@ body {
   word-wrap: normal;
 }
 
-/* line 311, ../scss/_reveal.scss */
+/* line 305, ../scss/_reveal.scss */
 .reveal table th,
 .reveal table td {
   text-align: left;
   padding-right: .3em;
 }
 
-/* line 316, ../scss/_reveal.scss */
+/* line 310, ../scss/_reveal.scss */
 .reveal table th {
   text-shadow: white 1px 1px 2px;
 }
 
-/* line 320, ../scss/_reveal.scss */
+/* line 314, ../scss/_reveal.scss */
 .reveal sup {
   vertical-align: super;
 }
 
-/* line 323, ../scss/_reveal.scss */
+/* line 317, ../scss/_reveal.scss */
 .reveal sub {
   vertical-align: sub;
 }
 
-/* line 327, ../scss/_reveal.scss */
+/* line 321, ../scss/_reveal.scss */
 .reveal small {
   display: inline-block;
   font-size: 0.6em;
@@ -450,7 +428,7 @@ body {
   vertical-align: top;
 }
 
-/* line 334, ../scss/_reveal.scss */
+/* line 328, ../scss/_reveal.scss */
 .reveal small * {
   vertical-align: top;
 }
@@ -458,7 +436,7 @@ body {
 /*********************************************
  * CONTROLS
  *********************************************/
-/* line 343, ../scss/_reveal.scss */
+/* line 337, ../scss/_reveal.scss */
 .reveal .controls {
   display: none;
   position: fixed;
@@ -469,14 +447,14 @@ body {
   bottom: 10px;
 }
 
-/* line 353, ../scss/_reveal.scss */
+/* line 347, ../scss/_reveal.scss */
 .reveal .controls div {
   position: absolute;
   opacity: 0.05;
   width: 0;
   height: 0;
   border: 12px solid transparent;
-  -moz-transform: scale(1.0);
+  -moz-transform: scale(0.9999);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
@@ -484,30 +462,30 @@ body {
   transition: all 0.2s ease;
 }
 
-/* line 369, ../scss/_reveal.scss */
+/* line 363, ../scss/_reveal.scss */
 .reveal .controls div.enabled {
   opacity: 0.7;
   cursor: pointer;
 }
 
-/* line 374, ../scss/_reveal.scss */
+/* line 368, ../scss/_reveal.scss */
 .reveal .controls div.enabled:active {
   margin-top: 1px;
 }
 
-/* line 378, ../scss/_reveal.scss */
+/* line 372, ../scss/_reveal.scss */
 .reveal .controls div.navigate-left {
   top: 42px;
   border-right-width: 22px;
   border-right-color: #eee;
 }
 
-/* line 384, ../scss/_reveal.scss */
+/* line 378, ../scss/_reveal.scss */
 .reveal .controls div.navigate-left.fragmented {
   opacity: 0.3;
 }
 
-/* line 388, ../scss/_reveal.scss */
+/* line 382, ../scss/_reveal.scss */
 .reveal .controls div.navigate-right {
   left: 74px;
   top: 42px;
@@ -515,24 +493,24 @@ body {
   border-left-color: #eee;
 }
 
-/* line 395, ../scss/_reveal.scss */
+/* line 389, ../scss/_reveal.scss */
 .reveal .controls div.navigate-right.fragmented {
   opacity: 0.3;
 }
 
-/* line 399, ../scss/_reveal.scss */
+/* line 393, ../scss/_reveal.scss */
 .reveal .controls div.navigate-up {
   left: 42px;
   border-bottom-width: 22px;
   border-bottom-color: #eee;
 }
 
-/* line 405, ../scss/_reveal.scss */
+/* line 399, ../scss/_reveal.scss */
 .reveal .controls div.navigate-up.fragmented {
   opacity: 0.3;
 }
 
-/* line 409, ../scss/_reveal.scss */
+/* line 403, ../scss/_reveal.scss */
 .reveal .controls div.navigate-down {
   left: 42px;
   top: 74px;
@@ -540,7 +518,7 @@ body {
   border-top-color: #eee;
 }
 
-/* line 416, ../scss/_reveal.scss */
+/* line 410, ../scss/_reveal.scss */
 .reveal .controls div.navigate-down.fragmented {
   opacity: 0.3;
 }
@@ -548,7 +526,7 @@ body {
 /*********************************************
  * PROGRESS BAR
  *********************************************/
-/* line 425, ../scss/_reveal.scss */
+/* line 419, ../scss/_reveal.scss */
 .reveal .progress {
   position: fixed;
   display: none;
@@ -559,7 +537,7 @@ body {
   z-index: 10;
 }
 
-/* line 434, ../scss/_reveal.scss */
+/* line 428, ../scss/_reveal.scss */
 .reveal .progress:after {
   content: '';
   display: 'block';
@@ -569,7 +547,7 @@ body {
   top: -20px;
 }
 
-/* line 442, ../scss/_reveal.scss */
+/* line 436, ../scss/_reveal.scss */
 .reveal .progress span {
   display: block;
   height: 100%;
@@ -584,7 +562,7 @@ body {
 /*********************************************
  * ROLLING LINKS
  *********************************************/
-/* line 459, ../scss/_reveal.scss */
+/* line 453, ../scss/_reveal.scss */
 .reveal .roll {
   display: inline-block;
   line-height: 1.2;
@@ -600,13 +578,13 @@ body {
   perspective-origin: 50% 50%;
 }
 
-/* line 476, ../scss/_reveal.scss */
+/* line 470, ../scss/_reveal.scss */
 .reveal .roll:hover {
   background: none;
   text-shadow: none;
 }
 
-/* line 480, ../scss/_reveal.scss */
+/* line 474, ../scss/_reveal.scss */
 .reveal .roll span {
   display: block;
   position: relative;
@@ -629,7 +607,7 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 506, ../scss/_reveal.scss */
+/* line 500, ../scss/_reveal.scss */
 .reveal .roll:hover span {
   background: rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(0px, 0px, -45px) rotateX(90deg);
@@ -638,7 +616,7 @@ body {
   transform: translate3d(0px, 0px, -45px) rotateX(90deg);
 }
 
-/* line 514, ../scss/_reveal.scss */
+/* line 508, ../scss/_reveal.scss */
 .reveal .roll span:after {
   content: attr(data-title);
   display: block;
@@ -662,14 +640,14 @@ body {
 /*********************************************
  * SLIDES
  *********************************************/
-/* line 543, ../scss/_reveal.scss */
+/* line 537, ../scss/_reveal.scss */
 .reveal {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* line 549, ../scss/_reveal.scss */
+/* line 543, ../scss/_reveal.scss */
 .reveal .slides {
   position: absolute;
   width: 100%;
@@ -694,7 +672,7 @@ body {
   perspective-origin: 0px -100px;
 }
 
-/* line 578, ../scss/_reveal.scss */
+/* line 572, ../scss/_reveal.scss */
 .reveal .slides > section,
 .reveal .slides > section > section {
   display: none;
@@ -716,7 +694,7 @@ body {
 }
 
 /* Global transition speed settings */
-/* line 616, ../scss/_reveal.scss */
+/* line 610, ../scss/_reveal.scss */
 .reveal[data-transition-speed="fast"] .slides section {
   -webkit-transition-duration: 400ms;
   -moz-transition-duration: 400ms;
@@ -724,7 +702,7 @@ body {
   transition-duration: 400ms;
 }
 
-/* line 622, ../scss/_reveal.scss */
+/* line 616, ../scss/_reveal.scss */
 .reveal[data-transition-speed="slow"] .slides section {
   -webkit-transition-duration: 1200ms;
   -moz-transition-duration: 1200ms;
@@ -733,7 +711,7 @@ body {
 }
 
 /* Slide-specific transition speed overrides */
-/* line 630, ../scss/_reveal.scss */
+/* line 624, ../scss/_reveal.scss */
 .reveal .slides section[data-transition-speed="fast"] {
   -webkit-transition-duration: 400ms;
   -moz-transition-duration: 400ms;
@@ -741,7 +719,7 @@ body {
   transition-duration: 400ms;
 }
 
-/* line 636, ../scss/_reveal.scss */
+/* line 630, ../scss/_reveal.scss */
 .reveal .slides section[data-transition-speed="slow"] {
   -webkit-transition-duration: 1200ms;
   -moz-transition-duration: 1200ms;
@@ -749,19 +727,19 @@ body {
   transition-duration: 1200ms;
 }
 
-/* line 643, ../scss/_reveal.scss */
+/* line 637, ../scss/_reveal.scss */
 .reveal .slides > section {
   left: -50%;
   top: -50%;
 }
 
-/* line 648, ../scss/_reveal.scss */
+/* line 642, ../scss/_reveal.scss */
 .reveal .slides > section.stack {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 654, ../scss/_reveal.scss */
+/* line 648, ../scss/_reveal.scss */
 .reveal .slides > section.present,
 .reveal .slides > section > section.present {
   display: block;
@@ -769,7 +747,7 @@ body {
   opacity: 1;
 }
 
-/* line 662, ../scss/_reveal.scss */
+/* line 656, ../scss/_reveal.scss */
 .reveal.center,
 .reveal.center .slides,
 .reveal.center .slides section {
@@ -779,7 +757,7 @@ body {
 /*********************************************
  * DEFAULT TRANSITION
  *********************************************/
-/* line 673, ../scss/_reveal.scss */
+/* line 667, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=default].past,
 .reveal .slides > section.past {
   display: block;
@@ -790,7 +768,7 @@ body {
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
 }
 
-/* line 683, ../scss/_reveal.scss */
+/* line 677, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=default].future,
 .reveal .slides > section.future {
   display: block;
@@ -801,7 +779,7 @@ body {
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
-/* line 694, ../scss/_reveal.scss */
+/* line 688, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=default].past,
 .reveal .slides > section > section.past {
   display: block;
@@ -812,7 +790,7 @@ body {
   transform: translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0);
 }
 
-/* line 704, ../scss/_reveal.scss */
+/* line 698, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=default].future,
 .reveal .slides > section > section.future {
   display: block;
@@ -826,7 +804,7 @@ body {
 /*********************************************
  * CONCAVE TRANSITION
  *********************************************/
-/* line 720, ../scss/_reveal.scss */
+/* line 714, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=concave].past,
 .reveal.concave .slides > section.past {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
@@ -835,7 +813,7 @@ body {
   transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
 }
 
-/* line 727, ../scss/_reveal.scss */
+/* line 721, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=concave].future,
 .reveal.concave .slides > section.future {
   -webkit-transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0);
@@ -844,7 +822,7 @@ body {
   transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0);
 }
 
-/* line 735, ../scss/_reveal.scss */
+/* line 729, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=concave].past,
 .reveal.concave .slides > section > section.past {
   -webkit-transform: translate3d(0, -80%, 0) rotateX(-70deg) translate3d(0, -80%, 0);
@@ -853,7 +831,7 @@ body {
   transform: translate3d(0, -80%, 0) rotateX(-70deg) translate3d(0, -80%, 0);
 }
 
-/* line 742, ../scss/_reveal.scss */
+/* line 736, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=concave].future,
 .reveal.concave .slides > section > section.future {
   -webkit-transform: translate3d(0, 80%, 0) rotateX(70deg) translate3d(0, 80%, 0);
@@ -865,7 +843,7 @@ body {
 /*********************************************
  * ZOOM TRANSITION
  *********************************************/
-/* line 755, ../scss/_reveal.scss */
+/* line 749, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=zoom].past,
 .reveal.zoom .slides > section.past {
   opacity: 0;
@@ -877,7 +855,7 @@ body {
   transform: scale(16);
 }
 
-/* line 766, ../scss/_reveal.scss */
+/* line 760, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=zoom].future,
 .reveal.zoom .slides > section.future {
   opacity: 0;
@@ -889,7 +867,7 @@ body {
   transform: scale(0.2);
 }
 
-/* line 778, ../scss/_reveal.scss */
+/* line 772, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=zoom].past,
 .reveal.zoom .slides > section > section.past {
   -webkit-transform: translate(0, -150%);
@@ -899,7 +877,7 @@ body {
   transform: translate(0, -150%);
 }
 
-/* line 786, ../scss/_reveal.scss */
+/* line 780, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=zoom].future,
 .reveal.zoom .slides > section > section.future {
   -webkit-transform: translate(0, 150%);
@@ -912,7 +890,7 @@ body {
 /*********************************************
  * LINEAR TRANSITION
  *********************************************/
-/* line 799, ../scss/_reveal.scss */
+/* line 793, ../scss/_reveal.scss */
 .reveal.linear section {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -920,7 +898,7 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 807, ../scss/_reveal.scss */
+/* line 801, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=linear].past,
 .reveal.linear .slides > section.past {
   -webkit-transform: translate(-150%, 0);
@@ -930,7 +908,7 @@ body {
   transform: translate(-150%, 0);
 }
 
-/* line 815, ../scss/_reveal.scss */
+/* line 809, ../scss/_reveal.scss */
 .reveal .slides > section[data-transition=linear].future,
 .reveal.linear .slides > section.future {
   -webkit-transform: translate(150%, 0);
@@ -940,7 +918,7 @@ body {
   transform: translate(150%, 0);
 }
 
-/* line 824, ../scss/_reveal.scss */
+/* line 818, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=linear].past,
 .reveal.linear .slides > section > section.past {
   -webkit-transform: translate(0, -150%);
@@ -950,7 +928,7 @@ body {
   transform: translate(0, -150%);
 }
 
-/* line 832, ../scss/_reveal.scss */
+/* line 826, ../scss/_reveal.scss */
 .reveal .slides > section > section[data-transition=linear].future,
 .reveal.linear .slides > section > section.future {
   -webkit-transform: translate(0, 150%);
@@ -963,7 +941,7 @@ body {
 /*********************************************
  * CUBE TRANSITION
  *********************************************/
-/* line 845, ../scss/_reveal.scss */
+/* line 839, ../scss/_reveal.scss */
 .reveal.cube .slides {
   -webkit-perspective: 1300px;
   -moz-perspective: 1300px;
@@ -971,7 +949,7 @@ body {
   perspective: 1300px;
 }
 
-/* line 852, ../scss/_reveal.scss */
+/* line 846, ../scss/_reveal.scss */
 .reveal.cube .slides section {
   padding: 30px;
   min-height: 700px;
@@ -984,12 +962,12 @@ body {
   box-sizing: border-box;
 }
 
-/* line 865, ../scss/_reveal.scss */
+/* line 859, ../scss/_reveal.scss */
 .reveal.center.cube .slides section {
   min-height: auto;
 }
 
-/* line 868, ../scss/_reveal.scss */
+/* line 862, ../scss/_reveal.scss */
 .reveal.cube .slides section:not(.stack):before {
   content: '';
   position: absolute;
@@ -1007,7 +985,7 @@ body {
   transform: translateZ(-20px);
 }
 
-/* line 885, ../scss/_reveal.scss */
+/* line 879, ../scss/_reveal.scss */
 .reveal.cube .slides section:not(.stack):after {
   content: '';
   position: absolute;
@@ -1027,13 +1005,13 @@ body {
   transform: translateZ(-90px) rotateX(65deg);
 }
 
-/* line 906, ../scss/_reveal.scss */
+/* line 900, ../scss/_reveal.scss */
 .reveal.cube .slides > section.stack {
   padding: 0;
   background: none;
 }
 
-/* line 911, ../scss/_reveal.scss */
+/* line 905, ../scss/_reveal.scss */
 .reveal.cube .slides > section.past {
   -webkit-transform-origin: 100% 0%;
   -moz-transform-origin: 100% 0%;
@@ -1045,7 +1023,7 @@ body {
   transform: translate3d(-100%, 0, 0) rotateY(-90deg);
 }
 
-/* line 923, ../scss/_reveal.scss */
+/* line 917, ../scss/_reveal.scss */
 .reveal.cube .slides > section.future {
   -webkit-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
@@ -1057,7 +1035,7 @@ body {
   transform: translate3d(100%, 0, 0) rotateY(90deg);
 }
 
-/* line 935, ../scss/_reveal.scss */
+/* line 929, ../scss/_reveal.scss */
 .reveal.cube .slides > section > section.past {
   -webkit-transform-origin: 0% 100%;
   -moz-transform-origin: 0% 100%;
@@ -1069,7 +1047,7 @@ body {
   transform: translate3d(0, -100%, 0) rotateX(90deg);
 }
 
-/* line 947, ../scss/_reveal.scss */
+/* line 941, ../scss/_reveal.scss */
 .reveal.cube .slides > section > section.future {
   -webkit-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
@@ -1084,7 +1062,7 @@ body {
 /*********************************************
  * PAGE TRANSITION
  *********************************************/
-/* line 964, ../scss/_reveal.scss */
+/* line 958, ../scss/_reveal.scss */
 .reveal.page .slides {
   -webkit-perspective-origin: 0% 50%;
   -moz-perspective-origin: 0% 50%;
@@ -1096,7 +1074,7 @@ body {
   perspective: 3000px;
 }
 
-/* line 976, ../scss/_reveal.scss */
+/* line 970, ../scss/_reveal.scss */
 .reveal.page .slides section {
   padding: 30px;
   min-height: 700px;
@@ -1105,12 +1083,12 @@ body {
   box-sizing: border-box;
 }
 
-/* line 984, ../scss/_reveal.scss */
+/* line 978, ../scss/_reveal.scss */
 .reveal.page .slides section.past {
   z-index: 12;
 }
 
-/* line 987, ../scss/_reveal.scss */
+/* line 981, ../scss/_reveal.scss */
 .reveal.page .slides section:not(.stack):before {
   content: '';
   position: absolute;
@@ -1127,7 +1105,7 @@ body {
   transform: translateZ(-20px);
 }
 
-/* line 1003, ../scss/_reveal.scss */
+/* line 997, ../scss/_reveal.scss */
 .reveal.page .slides section:not(.stack):after {
   content: '';
   position: absolute;
@@ -1143,13 +1121,13 @@ body {
   -webkit-transform: translateZ(-90px) rotateX(65deg);
 }
 
-/* line 1020, ../scss/_reveal.scss */
+/* line 1014, ../scss/_reveal.scss */
 .reveal.page .slides > section.stack {
   padding: 0;
   background: none;
 }
 
-/* line 1025, ../scss/_reveal.scss */
+/* line 1019, ../scss/_reveal.scss */
 .reveal.page .slides > section.past {
   -webkit-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
@@ -1161,7 +1139,7 @@ body {
   transform: translate3d(-40%, 0, 0) rotateY(-80deg);
 }
 
-/* line 1037, ../scss/_reveal.scss */
+/* line 1031, ../scss/_reveal.scss */
 .reveal.page .slides > section.future {
   -webkit-transform-origin: 100% 0%;
   -moz-transform-origin: 100% 0%;
@@ -1173,7 +1151,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 1049, ../scss/_reveal.scss */
+/* line 1043, ../scss/_reveal.scss */
 .reveal.page .slides > section > section.past {
   -webkit-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
@@ -1185,7 +1163,7 @@ body {
   transform: translate3d(0, -40%, 0) rotateX(80deg);
 }
 
-/* line 1061, ../scss/_reveal.scss */
+/* line 1055, ../scss/_reveal.scss */
 .reveal.page .slides > section > section.future {
   -webkit-transform-origin: 0% 100%;
   -moz-transform-origin: 0% 100%;
@@ -1200,7 +1178,7 @@ body {
 /*********************************************
  * FADE TRANSITION
  *********************************************/
-/* line 1080, ../scss/_reveal.scss */
+/* line 1074, ../scss/_reveal.scss */
 .reveal .slides section[data-transition=fade],
 .reveal.fade .slides section,
 .reveal.fade .slides > section > section {
@@ -1216,7 +1194,7 @@ body {
   transition: opacity 0.5s;
 }
 
-/* line 1098, ../scss/_reveal.scss */
+/* line 1092, ../scss/_reveal.scss */
 .reveal.fade.overview .slides section,
 .reveal.fade.overview .slides > section > section,
 .reveal.fade.exit-overview .slides section,
@@ -1231,7 +1209,7 @@ body {
 /*********************************************
  * NO TRANSITION
  *********************************************/
-/* line 1112, ../scss/_reveal.scss */
+/* line 1106, ../scss/_reveal.scss */
 .reveal .slides section[data-transition=none],
 .reveal.none .slides section {
   -webkit-transform: none;
@@ -1249,7 +1227,7 @@ body {
 /*********************************************
  * OVERVIEW
  *********************************************/
-/* line 1131, ../scss/_reveal.scss */
+/* line 1125, ../scss/_reveal.scss */
 .reveal.overview .slides {
   -webkit-perspective-origin: 0% 0%;
   -moz-perspective-origin: 0% 0%;
@@ -1261,44 +1239,44 @@ body {
   perspective: 700px;
 }
 
-/* line 1143, ../scss/_reveal.scss */
+/* line 1137, ../scss/_reveal.scss */
 .reveal.overview .slides section {
   height: 600px;
   overflow: hidden;
-  opacity: 1!important;
-  visibility: visible!important;
+  opacity: 1 !important;
+  visibility: visible !important;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 1151, ../scss/_reveal.scss */
+/* line 1145, ../scss/_reveal.scss */
 .reveal.overview .slides section .fragment {
   opacity: 1;
 }
 
-/* line 1155, ../scss/_reveal.scss */
+/* line 1149, ../scss/_reveal.scss */
 .reveal.overview .slides section:after,
 .reveal.overview .slides section:before {
   display: none !important;
 }
 
-/* line 1158, ../scss/_reveal.scss */
+/* line 1152, ../scss/_reveal.scss */
 .reveal.overview .slides section > section {
   opacity: 1;
   cursor: pointer;
 }
 
-/* line 1162, ../scss/_reveal.scss */
+/* line 1156, ../scss/_reveal.scss */
 .reveal.overview .slides section:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 1165, ../scss/_reveal.scss */
+/* line 1159, ../scss/_reveal.scss */
 .reveal.overview .slides section.present {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 1168, ../scss/_reveal.scss */
+/* line 1162, ../scss/_reveal.scss */
 .reveal.overview .slides > section.stack {
   padding: 0;
   background: none;
@@ -1308,7 +1286,7 @@ body {
 /*********************************************
  * PAUSED MODE
  *********************************************/
-/* line 1179, ../scss/_reveal.scss */
+/* line 1173, ../scss/_reveal.scss */
 .reveal .pause-overlay {
   position: absolute;
   top: 0;
@@ -1326,7 +1304,7 @@ body {
   transition: all 1s ease;
 }
 
-/* line 1196, ../scss/_reveal.scss */
+/* line 1190, ../scss/_reveal.scss */
 .reveal.paused .pause-overlay {
   visibility: visible;
   opacity: 1;
@@ -1335,12 +1313,12 @@ body {
 /*********************************************
  * FALLBACK
  *********************************************/
-/* line 1206, ../scss/_reveal.scss */
+/* line 1200, ../scss/_reveal.scss */
 .no-transforms {
   overflow-y: auto;
 }
 
-/* line 1210, ../scss/_reveal.scss */
+/* line 1204, ../scss/_reveal.scss */
 .no-transforms .reveal .slides {
   position: relative;
   width: 80%;
@@ -1351,13 +1329,13 @@ body {
   text-align: center;
 }
 
-/* line 1221, ../scss/_reveal.scss */
+/* line 1215, ../scss/_reveal.scss */
 .no-transforms .reveal .controls,
 .no-transforms .reveal .progress {
   display: none !important;
 }
 
-/* line 1225, ../scss/_reveal.scss */
+/* line 1219, ../scss/_reveal.scss */
 .no-transforms .reveal .slides section {
   display: block !important;
   opacity: 1 !important;
@@ -1374,12 +1352,12 @@ body {
   transform: none;
 }
 
-/* line 1242, ../scss/_reveal.scss */
+/* line 1236, ../scss/_reveal.scss */
 .no-transforms .reveal .slides section section {
   left: 0;
 }
 
-/* line 1246, ../scss/_reveal.scss */
+/* line 1240, ../scss/_reveal.scss */
 .no-transition {
   -webkit-transition: none;
   -moz-transition: none;
@@ -1391,7 +1369,7 @@ body {
 /*********************************************
  * BACKGROUND STATES
  *********************************************/
-/* line 1259, ../scss/_reveal.scss */
+/* line 1253, ../scss/_reveal.scss */
 .reveal .state-background {
   position: absolute;
   width: 100%;
@@ -1404,47 +1382,47 @@ body {
   transition: background 800ms ease;
 }
 
-/* line 1271, ../scss/_reveal.scss */
+/* line 1265, ../scss/_reveal.scss */
 .alert .reveal .state-background {
   background: rgba(200, 50, 30, 0.6);
 }
 
-/* line 1274, ../scss/_reveal.scss */
+/* line 1268, ../scss/_reveal.scss */
 .soothe .reveal .state-background {
   background: rgba(50, 200, 90, 0.4);
 }
 
-/* line 1277, ../scss/_reveal.scss */
+/* line 1271, ../scss/_reveal.scss */
 .blackout .reveal .state-background {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 1280, ../scss/_reveal.scss */
+/* line 1274, ../scss/_reveal.scss */
 .whiteout .reveal .state-background {
   background: rgba(255, 255, 255, 0.6);
 }
 
-/* line 1283, ../scss/_reveal.scss */
+/* line 1277, ../scss/_reveal.scss */
 .cobalt .reveal .state-background {
   background: rgba(22, 152, 213, 0.6);
 }
 
-/* line 1286, ../scss/_reveal.scss */
+/* line 1280, ../scss/_reveal.scss */
 .mint .reveal .state-background {
   background: rgba(22, 213, 75, 0.6);
 }
 
-/* line 1289, ../scss/_reveal.scss */
+/* line 1283, ../scss/_reveal.scss */
 .submerge .reveal .state-background {
   background: rgba(12, 25, 77, 0.6);
 }
 
-/* line 1292, ../scss/_reveal.scss */
+/* line 1286, ../scss/_reveal.scss */
 .lila .reveal .state-background {
   background: rgba(180, 50, 140, 0.6);
 }
 
-/* line 1295, ../scss/_reveal.scss */
+/* line 1289, ../scss/_reveal.scss */
 .sunset .reveal .state-background {
   background: rgba(255, 122, 0, 0.6);
 }
@@ -1452,7 +1430,7 @@ body {
 /*********************************************
  * RTL SUPPORT
  *********************************************/
-/* line 1310, ../scss/_reveal.scss */
+/* line 1304, ../scss/_reveal.scss */
 .reveal.rtl .slides,
 .reveal.rtl .slides h1,
 .reveal.rtl .slides h2,
@@ -1464,19 +1442,19 @@ body {
   font-family: sans-serif;
 }
 
-/* line 1316, ../scss/_reveal.scss */
+/* line 1310, ../scss/_reveal.scss */
 .reveal.rtl pre,
 .reveal.rtl code {
   direction: ltr;
 }
 
-/* line 1321, ../scss/_reveal.scss */
+/* line 1315, ../scss/_reveal.scss */
 .reveal.rtl ol,
 .reveal.rtl ul {
   text-align: right;
 }
 
-/* line 1325, ../scss/_reveal.scss */
+/* line 1319, ../scss/_reveal.scss */
 .reveal.rtl .progress span {
   float: right;
 }
@@ -1484,7 +1462,7 @@ body {
 /*********************************************
  * SPEAKER NOTES
  *********************************************/
-/* line 1334, ../scss/_reveal.scss */
+/* line 1328, ../scss/_reveal.scss */
 .reveal aside.notes {
   display: none;
 }
@@ -1492,7 +1470,7 @@ body {
 /*********************************************
  * ZOOM PLUGIN
  *********************************************/
-/* line 1345, ../scss/_reveal.scss */
+/* line 1339, ../scss/_reveal.scss */
 .zoomed .reveal *,
 .zoomed .reveal *:before,
 .zoomed .reveal *:after {
@@ -1506,29 +1484,35 @@ body {
   backface-visibility: visible !important;
 }
 
-/* line 1358, ../scss/_reveal.scss */
+/* line 1352, ../scss/_reveal.scss */
 .zoomed .reveal .progress,
 .zoomed .reveal .controls {
   opacity: 0;
 }
 
-/* line 1362, ../scss/_reveal.scss */
+/* line 1356, ../scss/_reveal.scss */
 .zoomed .reveal .roll span {
   background: none;
 }
 
-/* line 1366, ../scss/_reveal.scss */
+/* line 1360, ../scss/_reveal.scss */
 .zoomed .reveal .roll span:after {
   visibility: hidden;
 }
 
-/* line 9, ../scss/style.scss */
+/* 	Colors
+	------------------------------------------------------- */
+/* 	Global
+	------------------------------------------------------- */
+/* line 17, ../scss/style.scss */
 body {
   background-color: #d2d3d5;
   position: relative;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
 }
 
-/* line 17, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 .bg {
   position: absolute;
   bottom: 0;
@@ -1537,4 +1521,47 @@ body {
   left: 50%;
   margin-left: -750px;
   background: url("../images/bg.jpg") 0 0 no-repeat;
+}
+
+/* 	Car slide
+	------------------------------------------------------- */
+/* line 40, ../scss/style.scss */
+.car-image {
+  display: block;
+  margin: auto;
+}
+
+/* line 45, ../scss/style.scss */
+.car-name, .star-count, .num-sold {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+/* line 51, ../scss/style.scss */
+.car-name {
+  font-size: 2em;
+  line-height: 1.8em;
+}
+
+/* line 57, ../scss/style.scss */
+.star-count {
+  background-color: #ff4700;
+  padding: 8px;
+}
+
+/* line 63, ../scss/style.scss */
+.num-sold {
+  background-color: #ff4700;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* line 72, ../scss/style.scss */
+.car-blurb {
+  text-align: left;
+  display: block;
+  padding: 0 100px;
 }
