@@ -6,18 +6,23 @@
 @import "compass/reset";
 @import "reveal";
 
-/* 	Colors
+
+/* 	Variables, Mixins, Global Extends
 	------------------------------------------------------- */
 
 	$orange: #FF4700;
-
 	$green: #7FB47A;
+	$gray: #d2d3d5;
+
+	%rounded-corner {
+		border-radius: 4px;
+	}
 
 /* 	Global
 	------------------------------------------------------- */
 
 	body {
-		background-color: #d2d3d5;
+		background-color: $gray;
 		position: relative;
 		font-family: Helvetica, sans-serif;
 		font-size: 22px;
@@ -34,6 +39,66 @@
 		left: 50%;
 		margin-left: (-$bg_w/2);
 		background: url("../images/bg.jpg") 0 0 no-repeat;
+	}
+
+/* 	Navigation
+	------------------------------------------------------- */
+
+	.nav-overlay {
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.86);
+		z-index: 2;
+
+		&.off {
+			display: none
+		}
+	}
+
+	.nav-header {
+		font-size: 60px;
+		line-height: 80px;
+		margin-top: 55px;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+	}
+
+	$nav-list_w: 50%;
+	$nav-list_min_h: 400px;
+
+	.nav-list {
+		@extend %rounded-corner;
+		background-color: $gray;
+		display: block;
+		left: 50%;
+		margin-left: -$nav-list_w/2;
+		margin-top: -$nav-list_min_h/2;
+		min-height: $nav-list_min_h;
+		padding: 20px 0;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: $nav-list_w;
+
+		a {
+			display: inline-block;
+			@extend %rounded-corner;
+			background-color: $green;
+			padding: 6px 20px;
+			margin-bottom: 6px;
+		}
+	}
+
+
+	.nav-list-column {
+		float: left;
+		width: 50%;
+		text-align: center;
 	}
 
 /* 	Car slide
@@ -64,11 +129,11 @@
 
 	.num-sold {
 		@extend %car-header;
+		@extend %rounded-corner;
 		background-color: $green;
 		color: #fff;
 		font-weight: bold;
 		padding: 8px;
-		border-radius: 4px;
 	}
 
 	.car-blurb {
