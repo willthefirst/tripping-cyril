@@ -67,6 +67,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@font-face {
+  font-family: 'asapbold';
+  src: url("fonts/asap-bold-webfont.eot");
+  src: url("fonts/asap-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/asap-bold-webfont.woff") format("woff"), url("fonts/asap-bold-webfont.ttf") format("truetype"), url("fonts/asap-bold-webfont.svg#asapbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'asapbold_italic';
+  src: url("fonts/asap-bolditalic-webfont.eot");
+  src: url("fonts/asap-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/asap-bolditalic-webfont.woff") format("woff"), url("fonts/asap-bolditalic-webfont.ttf") format("truetype"), url("fonts/asap-bolditalic-webfont.svg#asapbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'asapitalic';
+  src: url("fonts/asap-italic-webfont.eot");
+  src: url("fonts/asap-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/asap-italic-webfont.woff") format("woff"), url("fonts/asap-italic-webfont.ttf") format("truetype"), url("fonts/asap-italic-webfont.svg#asapitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'asapregular';
+  src: url("fonts/asap-regular-webfont.eot");
+  src: url("fonts/asap-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/asap-regular-webfont.woff") format("woff"), url("fonts/asap-regular-webfont.ttf") format("truetype"), url("fonts/asap-regular-webfont.svg#asapregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'deliciousbold';
+  src: url("fonts/delicious-bold-webfont.eot");
+  src: url("fonts/delicious-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/delicious-bold-webfont.woff") format("woff"), url("fonts/delicious-bold-webfont.ttf") format("truetype"), url("fonts/delicious-bold-webfont.svg#deliciousbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'deliciousbold_italic';
+  src: url("fonts/delicious-bolditalic-webfont.eot");
+  src: url("fonts/delicious-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/delicious-bolditalic-webfont.woff") format("woff"), url("fonts/delicious-bolditalic-webfont.ttf") format("truetype"), url("fonts/delicious-bolditalic-webfont.svg#deliciousbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'delicious_heavyregular';
+  src: url("fonts/delicious-heavy-webfont.eot");
+  src: url("fonts/delicious-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/delicious-heavy-webfont.woff") format("woff"), url("fonts/delicious-heavy-webfont.ttf") format("truetype"), url("fonts/delicious-heavy-webfont.svg#delicious_heavyregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'deliciousitalic';
+  src: url("fonts/delicious-italic-webfont.eot");
+  src: url("fonts/delicious-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/delicious-italic-webfont.woff") format("woff"), url("fonts/delicious-italic-webfont.ttf") format("truetype"), url("fonts/delicious-italic-webfont.svg#deliciousitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'deliciousroman';
+  src: url("fonts/delicious-roman-webfont.eot");
+  src: url("fonts/delicious-roman-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/delicious-roman-webfont.woff") format("woff"), url("fonts/delicious-roman-webfont.ttf") format("truetype"), url("fonts/delicious-roman-webfont.svg#deliciousroman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*
  * reveal.js
  * http://lab.hakim.se/reveal-js
@@ -1501,22 +1573,24 @@ body {
 
 /* 	Variables, Mixins, Global Extends
 	------------------------------------------------------- */
-/* line 17, ../scss/style.scss */
-.nav-list, .nav-list a, .num-sold {
+/* 	Fonts  -------------------------------------------- */
+/* line 33, ../scss/style.scss */
+.nav-list, .num-sold {
   border-radius: 4px;
 }
 
 /* 	Global
 	------------------------------------------------------- */
-/* line 24, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 body {
   background-color: #d2d3d5;
   position: relative;
-  font-family: Helvetica, sans-serif;
+  font-family: "asapregular", sans-serif;
   font-size: 22px;
+  min-width: 600px;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .bg {
   position: absolute;
   bottom: 0;
@@ -1529,7 +1603,7 @@ body {
 
 /* 	Navigation
 	------------------------------------------------------- */
-/* line 47, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .nav-overlay {
   display: block;
   position: fixed;
@@ -1537,53 +1611,54 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.86);
+  background-color: rgba(170, 88, 0, 0.55);
   z-index: 2;
 }
-/* line 57, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 .nav-overlay.off {
   display: none;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .nav-toggle {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 48px;
+  font-size: 32px;
   padding: 20px 30px;
   cursor: pointer;
   z-index: 2;
 }
-/* line 71, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .nav-toggle .nav-on {
   display: none;
   color: #fff;
 }
-/* line 76, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .nav-toggle .nav-off {
   display: block;
 }
-/* line 81, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .nav-toggle.off .nav-on {
   display: block;
 }
-/* line 85, ../scss/style.scss */
+/* line 102, ../scss/style.scss */
 .nav-toggle.off .nav-off {
   display: none;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .nav-header {
   font-size: 60px;
   line-height: 80px;
-  margin-top: 55px;
+  margin-top: 35px;
   font-weight: bold;
   color: #fff;
   text-align: center;
+  font-family: "deliciousbold", sans-serif;
 }
 
-/* line 103, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 .nav-list {
   background-color: #d2d3d5;
   display: block;
@@ -1596,51 +1671,61 @@ body {
   text-align: center;
   top: 50%;
   width: 50%;
+  list-style-type: numbered;
 }
-/* line 117, ../scss/style.scss */
-.nav-list a {
+/* line 140, ../scss/style.scss */
+.nav-list ol {
+  list-style-type: decimal;
+  display: block;
+  margin: auto;
+  width: 519px;
+}
+/* line 149, ../scss/style.scss */
+.nav-list ol li a {
+  color: #7fb47a;
   display: inline-block;
-  background-color: #7fb47a;
-  padding: 6px 20px;
+  text-decoration: none;
+  font-family: "deliciousroman", sans-serif;
+  padding: 6px;
   margin-bottom: 6px;
 }
 
-/* line 127, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .nav-list-column {
   float: left;
-  width: 50%;
-  text-align: center;
+  padding-left: 50px;
+  text-align: left;
 }
 
 /* 	Car slide
 	------------------------------------------------------- */
-/* line 136, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .car-image {
   display: block;
   margin: auto;
 }
 
-/* line 141, ../scss/style.scss */
+/* line 176, ../scss/style.scss */
 .car-name, .star-count, .num-sold {
   display: inline-block;
   vertical-align: middle;
   margin: 0 8px;
 }
 
-/* line 147, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 .car-name {
   font-size: 2em;
   line-height: 1.8em;
 }
 
-/* line 153, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 .star-count {
   padding: 8px;
   position: relative;
   color: #fff;
   padding: 10px 15px 0;
 }
-/* line 160, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .star-count:before {
   color: #ff4700;
   font-size: 48px;
@@ -1651,7 +1736,7 @@ body {
   z-index: -1;
 }
 
-/* line 171, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .num-sold {
   background-color: #7fb47a;
   color: #fff;
@@ -1659,7 +1744,7 @@ body {
   padding: 8px;
 }
 
-/* line 180, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 .car-blurb {
   text-align: left;
   display: block;

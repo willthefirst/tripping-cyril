@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "fonts";
 @import "reveal";
 
 
@@ -13,6 +14,21 @@
 	$orange: #FF4700;
 	$green: #7FB47A;
 	$gray: #d2d3d5;
+
+	/* 	Fonts  -------------------------------------------- */
+
+	$asap: 'asapregular', sans-serif;
+	$asap_b: 'asapbold', sans-serif;
+	$asap_i: 'asapitalic', sans-serif;
+	$asap_bi: 'asapbold_italic', sans-serif;
+
+
+	$delicious: 'deliciousroman', sans-serif;
+	$delicious_b: 'deliciousbold', sans-serif;
+	$delicious_i: 'deliciousitalic', sans-serif;
+	$delicious_bb: 'delicious_heavyregular', sans-serif;
+	$delicious_bi: 'deliciousbold_italic', sans-serif;
+
 
 	%rounded-corner {
 		border-radius: 4px;
@@ -24,8 +40,9 @@
 	body {
 		background-color: $gray;
 		position: relative;
-		font-family: Helvetica, sans-serif;
+		font-family: $asap;
 		font-size: 22px;
+		min-width: 600px;
 	}
 
 	$bg_w: 1500px;
@@ -51,7 +68,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background-color: rgba(0, 0, 0, 0.86);
+		background-color: rgba(170, 88, 0, 0.55);
 		z-index: 2;
 
 		&.off {
@@ -63,7 +80,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		font-size: 48px;
+		font-size: 32px;
 		padding: 20px 30px;
 		cursor: pointer;
 		z-index: 2;
@@ -88,13 +105,18 @@
 		}
 	}
 
+	.nav-slider {
+
+	}
+
 	.nav-header {
 		font-size: 60px;
 		line-height: 80px;
-		margin-top: 55px;
+		margin-top: 35px;
 		font-weight: bold;
 		color: #fff;
 		text-align: center;
+		font-family: $delicious_b;
 	}
 
 	$nav-list_w: 50%;
@@ -113,21 +135,34 @@
 		text-align: center;
 		top: 50%;
 		width: $nav-list_w;
+		list-style-type: numbered;
 
-		a {
-			display: inline-block;
-			@extend %rounded-corner;
-			background-color: $green;
-			padding: 6px 20px;
-			margin-bottom: 6px;
+		ol {
+			list-style-type: decimal;
+			display: block;
+			margin: auto;
+			width: 519px;
+			@extend .clearfix;
+
+			li {
+
+				a {
+					color: $green;
+					display: inline-block;
+					text-decoration: none;
+					font-family: $delicious;
+					padding: 6px;
+					margin-bottom: 6px;
+				}
+			}
+
 		}
 	}
 
-
 	.nav-list-column {
 		float: left;
-		width: 50%;
-		text-align: center;
+		padding-left: 50px;
+		text-align: left;
 	}
 
 /* 	Car slide

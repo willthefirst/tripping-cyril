@@ -8,6 +8,11 @@ var APP = {
 			$(this).toggleClass('off');
 			$('.nav-overlay').toggleClass('off');
 		});
+
+		$('.nav-list a').on('click', function() {
+			$('.nav-toggle').toggleClass('off');
+			$('.nav-overlay').toggleClass('off');
+		});
 	}
 };
 
