@@ -59,6 +59,35 @@
 		}
 	}
 
+	.nav-toggle {
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 48px;
+		padding: 20px 30px;
+		cursor: pointer;
+		z-index: 2;
+
+		.nav-on {
+			display: none;
+			color: #fff;
+		}
+
+		.nav-off {
+			display: block;
+		}
+
+		&.off {
+			.nav-on {
+				display: block;
+			}
+
+			.nav-off {
+				display: none;
+			}
+		}
+	}
+
 	.nav-header {
 		font-size: 60px;
 		line-height: 80px;
@@ -123,8 +152,20 @@
 
 	.star-count {
 		@extend %car-header;
-		background-color: $orange;
 		padding: 8px;
+		position: relative;
+		color: #fff;
+		padding: 10px 15px 0;
+
+		&:before {
+			color: $orange;
+			font-size: 48px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+		}
 	}
 
 	.num-sold {
