@@ -72,6 +72,7 @@
 		margin: 10px;
 		font-size: 0;
 		width: 68px;
+		z-index: 1;
 		height: 76px;
 	}
 
@@ -82,7 +83,11 @@
 
 	.references {
 		@extend %rounded-corner;
-		@include transition(transform, 0.5s);
+		-webkit-transition: -webkit-transform .5s ease;
+		-moz-transition: -moz-transform .5s ease;
+		-ms-transition: -ms-transform .5s ease;
+		-o-transition: -o-transform .5s ease;
+		transition: transform .5s ease;
 		background-color: $green;
 		position: fixed;
 		left: 0;
