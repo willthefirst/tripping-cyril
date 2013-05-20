@@ -4,6 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
 @import "fonts";
 @import "reveal";
 
@@ -34,6 +36,11 @@
 		border-radius: 4px;
 	}
 
+	.clearfix {
+		@include clearfix;
+	}
+
+
 /* 	Global
 	------------------------------------------------------- */
 
@@ -58,32 +65,31 @@
 		background: url("../images/bg.jpg") 0 0 no-repeat;
 	}
 
+	.logo {
+		display: block;
+		background: url('../images/logo-gumtree.png') no-repeat;
+		position: fixed;
+		margin: 10px;
+		font-size: 0;
+		width: 68px;
+		height: 76px;
+	}
+
+	a {
+		@include single-transition(color, .1s , linear);
+	}
+
 /* 	Navigation
 	------------------------------------------------------- */
-
-	.nav-overlay {
-		display: block;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: rgba(170, 88, 0, 0.55);
-		z-index: 2;
-
-		&.off {
-			display: none
-		}
-	}
 
 	.nav-toggle {
 		position: fixed;
 		top: 0;
-		left: 0;
-		font-size: 32px;
+		right: 0;
+		font-size: 24px;
 		padding: 20px 30px;
 		cursor: pointer;
-		z-index: 2;
+		z-index: 40;
 
 		.nav-on {
 			display: none;
@@ -105,72 +111,103 @@
 		}
 	}
 
-	.nav-slider {
-
-	}
-
 	.nav-header {
-		font-size: 60px;
-		line-height: 80px;
-		margin-top: 35px;
+		font-size: 32px;
+		line-height: 40px;
+		margin-top: 38px;
+		margin-bottom: 15px;
 		font-weight: bold;
 		color: #fff;
 		text-align: center;
 		font-family: $delicious_b;
 	}
 
-	$nav-list_w: 50%;
-	$nav-list_min_h: 400px;
-
-	.nav-list {
-		@extend %rounded-corner;
+	.nav-slider {
+		// @include transition(all, .5s, ease-out);
+		-webkit-transition: -webkit-transform .5s ease;
+		-moz-transition: -moz-transform .5s ease;
+		-ms-transition: -ms-transform .5s ease;
+		-o-transition: -o-transform .5s ease;
+		transition: transform .5s ease;
+		padding: 20px 0 20px;
 		background-color: $gray;
-		display: block;
-		left: 50%;
-		margin-left: -$nav-list_w/2;
-		margin-top: -$nav-list_min_h/2;
-		min-height: $nav-list_min_h;
-		padding: 20px 0;
+		@extend .clearfix;
+		background-color: green;
 		position: absolute;
-		text-align: center;
-		top: 50%;
-		width: $nav-list_w;
-		list-style-type: numbered;
+		right: 0;
+		z-index: 40;
+		width: 280px;
+		@include translate3d(0, 0, 0);
 
+		&.off {
+			@include translate3d(281px, 0, 0);
+		}
+	}
+	.nav-list {
+		display: block;
+		padding-left: 62px;
 		ol {
 			list-style-type: decimal;
 			display: block;
 			margin: auto;
-			width: 519px;
-			@extend .clearfix;
+			color: #fff;
 
 			li {
 
 				a {
-					color: $green;
+					color: #fff;
 					display: inline-block;
 					text-decoration: none;
 					font-family: $delicious;
-					padding: 6px;
+					padding: 2px 0;
 					margin-bottom: 6px;
+
+					&:hover {
+						color: $green;
+					}
 				}
 			}
 
 		}
 	}
 
-	.nav-list-column {
-		float: left;
-		padding-left: 50px;
-		text-align: left;
-	}
-
 /* 	Car slide
 	------------------------------------------------------- */
 
+	.car-media {
+		overflow: hidden;
+		height: 394px;
+		width: 700px;
+		text-align: center;
+		margin: auto;
+		position: relative;
+	}
 	.car-image {
 		display: block;
 		margin: auto;
+		// @include transition(transform, .5s);
+	}
+
+	.car-vid {
+		display: none;
+		// @include rotateX(180deg);
+		left: 0;
+	}
+
+	// Vid/image toggling
+
+	.car-slide {
+
+		&.vid-on {
+			.car-image {
+				display: none;
+				// @include rotateX(180deg);
+			}
+			.car-vid {
+				display: inline;
+				// @include rotateX(0deg);
+			}
+		}
 	}
 
 	%car-header {
@@ -210,6 +247,20 @@
 		color: #fff;
 		font-weight: bold;
 		padding: 8px;
+	}
+
+	.vid-toggle {
+		cursor: pointer;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		position: absolute !important;
+		top: 20px; // 20px = padding on top of slides
+		right: 120px;
+		background-color: $green;
+		color: #fff;
+		display: block;
+		padding: 10px !important;
+		text-decoration: none;
 	}
 
 	.car-blurb {

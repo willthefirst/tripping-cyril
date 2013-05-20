@@ -13,7 +13,7 @@
  * RESET STYLES
  *********************************************/
 
-html, body, .reveal div, .reveal applet, .reveal object, .reveal iframe, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal blockquote, .reveal pre,
+html, body, .reveal applet, .reveal object, .reveal iframe, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal blockquote, .reveal pre,
 .reveal a, .reveal abbr, .reveal acronym, .reveal address, .reveal big, .reveal cite, .reveal code,
 .reveal del, .reveal dfn, .reveal em, .reveal ins, .reveal kbd, .reveal q, .reveal s, .reveal samp,
 .reveal small, .reveal strike, .reveal strong, .reveal sub, .reveal sup, .reveal tt, .reveal var,
@@ -335,12 +335,12 @@ body {
 
 .reveal .controls {
 	display: none;
-	position: fixed;
-	width: 110px;
+	position: absolute;
 	height: 110px;
 	z-index: 30;
-	right: 10px;
-	bottom: 10px;
+	top: 40%;
+	left: 0;
+	right: 0;
 }
 
 .reveal .controls div {
@@ -370,6 +370,7 @@ body {
 
 	.reveal .controls div.navigate-left {
 		top: 42px;
+		left: 40px;
 
 		border-right-width: 22px;
 		border-right-color: #eee;
@@ -379,7 +380,7 @@ body {
 		}
 
 	.reveal .controls div.navigate-right {
-		left: 74px;
+		right: 40px;
 		top: 42px;
 
 		border-left-width: 22px;
