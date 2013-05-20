@@ -114,6 +114,17 @@
 		}
 	}
 
+	//IE9 fallback
+	.no-transforms {
+		margin-right: 0;
+		.references {
+			margin-left: -180px;
+			&:hover {
+				margin-left: 0;
+			}
+		}
+	}
+
 	.reference-links {
 		float: left;
 		margin-right: 20px;
@@ -183,6 +194,18 @@
 			@include translate3d(281px, 0, 0);
 		}
 	}
+
+	//IE9 fallback
+	.no-transforms {
+		margin-right: 0;
+		.nav-slider {
+			margin-right: 0;
+			&.off {
+				margin-right: -281px;
+			}
+		}
+	}
+
 	.nav-list {
 		display: block;
 		padding-left: 62px;
