@@ -23,6 +23,6 @@ var APP = {
 	}
 };
 
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 	APP.init();
 });

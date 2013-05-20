@@ -1576,7 +1576,7 @@ body {
 	------------------------------------------------------- */
 /* 	Fonts  -------------------------------------------- */
 /* line 35, ../scss/style.scss */
-.num-sold {
+.references, .num-sold {
   border-radius: 4px;
 }
 
@@ -1621,15 +1621,63 @@ body {
 
 /* line 78, ../scss/style.scss */
 a {
+  text-decoration: none;
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   -o-transition: color 0.1s linear;
   transition: color 0.1s linear;
 }
 
+/* line 83, ../scss/style.scss */
+.references {
+  -webkit-transition: -webkit-transform, 0.5s;
+  -moz-transition: -moz-transform, 0.5s;
+  -o-transition: -o-transform, 0.5s;
+  transition: transform, 0.5s;
+  background-color: #7fb47a;
+  position: fixed;
+  left: 0;
+  bottom: 200px;
+  z-index: 2;
+  padding: 10px;
+  display: table;
+  -webkit-transform: translate3d(-180px, 0, 0);
+  -moz-transform: translate3d(-180px, 0, 0);
+  -ms-transform: translate3d(-180px, 0, 0);
+  -o-transform: translate3d(-180px, 0, 0);
+  transform: translate3d(-180px, 0, 0);
+}
+/* line 95, ../scss/style.scss */
+.references:hover {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 98, ../scss/style.scss */
+.references a {
+  display: block;
+  color: #fff;
+  padding: 4px;
+}
+/* line 104, ../scss/style.scss */
+.references .icon-ellipsis-horizontal {
+  display: block;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 112, ../scss/style.scss */
+.reference-links {
+  float: left;
+  margin-right: 20px;
+}
+
 /* 	Navigation
 	------------------------------------------------------- */
-/* line 85, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 .nav-toggle {
   position: fixed;
   top: 0;
@@ -1639,25 +1687,25 @@ a {
   cursor: pointer;
   z-index: 40;
 }
-/* line 94, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 .nav-toggle .nav-on {
   display: none;
   color: #fff;
 }
-/* line 99, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .nav-toggle .nav-off {
   display: block;
 }
-/* line 104, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .nav-toggle.off .nav-on {
   display: block;
 }
-/* line 108, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 .nav-toggle.off .nav-off {
   display: none;
 }
 
-/* line 114, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .nav-header {
   font-size: 32px;
   line-height: 40px;
@@ -1669,7 +1717,7 @@ a {
   font-family: "deliciousbold", sans-serif;
 }
 
-/* line 125, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 .nav-slider {
   -webkit-transition: -webkit-transform .5s ease;
   -moz-transition: -moz-transform .5s ease;
@@ -1689,7 +1737,7 @@ a {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 142, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 .nav-slider.off {
   -webkit-transform: translate3d(281px, 0, 0);
   -moz-transform: translate3d(281px, 0, 0);
@@ -1698,19 +1746,19 @@ a {
   transform: translate3d(281px, 0, 0);
 }
 
-/* line 146, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .nav-list {
   display: block;
   padding-left: 62px;
 }
-/* line 149, ../scss/style.scss */
+/* line 184, ../scss/style.scss */
 .nav-list ol {
   list-style-type: decimal;
   display: block;
   margin: auto;
   color: #fff;
 }
-/* line 157, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .nav-list ol li a {
   color: #fff;
   display: inline-block;
@@ -1719,14 +1767,14 @@ a {
   padding: 2px 0;
   margin-bottom: 6px;
 }
-/* line 165, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
 .nav-list ol li a:hover {
   color: #7fb47a;
 }
 
 /* 	Car slide
 	------------------------------------------------------- */
-/* line 177, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .car-media {
   overflow: hidden;
   height: 394px;
@@ -1736,48 +1784,48 @@ a {
   position: relative;
 }
 
-/* line 185, ../scss/style.scss */
+/* line 220, ../scss/style.scss */
 .car-image {
   display: block;
   margin: auto;
 }
 
-/* line 191, ../scss/style.scss */
+/* line 226, ../scss/style.scss */
 .car-vid {
   display: none;
   left: 0;
 }
 
-/* line 202, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .car-slide.vid-on .car-image {
   display: none;
 }
-/* line 206, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .car-slide.vid-on .car-vid {
   display: inline;
 }
 
-/* line 213, ../scss/style.scss */
+/* line 248, ../scss/style.scss */
 .car-name, .star-count, .num-sold {
   display: inline-block;
   vertical-align: middle;
   margin: 0 8px;
 }
 
-/* line 219, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 .car-name {
   font-size: 2em;
   line-height: 1.8em;
 }
 
-/* line 225, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .star-count {
   padding: 8px;
   position: relative;
   color: #fff;
   padding: 10px 15px 0;
 }
-/* line 232, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 .star-count:before {
   color: #ff4700;
   font-size: 48px;
@@ -1788,7 +1836,7 @@ a {
   z-index: -1;
 }
 
-/* line 243, ../scss/style.scss */
+/* line 278, ../scss/style.scss */
 .num-sold {
   background-color: #7fb47a;
   color: #fff;
@@ -1796,7 +1844,7 @@ a {
   padding: 8px;
 }
 
-/* line 252, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .vid-toggle {
   cursor: pointer;
   border-bottom-right-radius: 4px;
@@ -1811,7 +1859,7 @@ a {
   text-decoration: none;
 }
 
-/* line 266, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 .car-blurb {
   text-align: left;
   display: block;

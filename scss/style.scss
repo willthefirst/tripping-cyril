@@ -76,7 +76,42 @@
 	}
 
 	a {
+		text-decoration: none;
 		@include single-transition(color, .1s , linear);
+	}
+
+	.references {
+		@extend %rounded-corner;
+		@include transition(transform, 0.5s);
+		background-color: $green;
+		position: fixed;
+		left: 0;
+		bottom: 200px;
+		z-index: 2;
+		padding: 10px;
+		display: table;
+		@include translate3d(-180px, 0, 0);
+
+		&:hover {
+			@include translate3d(0, 0, 0);
+		}
+		a {
+			display: block;
+			color: #fff;
+			padding: 4px;
+		}
+
+		.icon-ellipsis-horizontal {
+			display: block;
+			color: #fff;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	.reference-links {
+		float: left;
+		margin-right: 20px;
 	}
 
 /* 	Navigation
