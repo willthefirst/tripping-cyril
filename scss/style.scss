@@ -56,13 +56,15 @@
 	$bg_h: 900px;
 
 	.bg {
+		top: 0;
+		// border-top: 34px solid #5cb92e;
 		position: absolute;
 		bottom: 0;
 		height: $bg_h;
 		width: $bg_w;
 		left: 50%;
 		margin-left: (-$bg_w/2);
-		background: url("../images/bg.jpg") 0 0 no-repeat;
+		background: url("../images/bg.png") 0 0 no-repeat;
 	}
 
 	.logo {
