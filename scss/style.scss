@@ -12,10 +12,11 @@
 	------------------------------------------------------- */
 
 	$orange: #FF4700;
-	$green: #7FB47A;
-	$green-lime: #5cb92e;
+	$green: #5cb92e;
 	$gray: #d2d3d5;
 	$white: #f1f2f2;
+	$yellow: #ffef61;
+	$black: #464646;
 
 	/* 	Fonts  -------------------------------------------- */
 
@@ -51,8 +52,8 @@
 		background-color: $white;
 		position: relative;
 		font-family: $asap;
-		font-size: 22px;
-		min-width: 600px;
+		font-size: 20px;
+		min-height: 700px;
 	}
 
 	$bg_w: 1500px;
@@ -102,7 +103,8 @@
 		background-color: $green;
 		position: fixed;
 		left: 0;
-		bottom: 200px;
+		bottom: 46px;
+		border: 1px solid #666;
 		z-index: 2;
 		padding: 10px;
 		display: table;
@@ -145,6 +147,8 @@
 		position: relative;
 		top: 47px;
 		height: 69%;
+		width: 970px;
+		margin: auto;
 	}
 
 /* 	Navigation
@@ -177,6 +181,10 @@
 				display: none;
 			}
 		}
+	}
+
+	.nav-off {
+		color: #fff;
 	}
 
 	.nav-header {
@@ -256,7 +264,7 @@
 
 	.car-media {
 		overflow: hidden;
-		height: 394px;
+		height: 340px;
 		width: 700px;
 		text-align: center;
 		margin: auto;
@@ -265,6 +273,7 @@
 	.car-image {
 		display: block;
 		margin: auto;
+		height: 300px;
 		// @include transition(transform, .5s);
 	}
 
@@ -276,7 +285,9 @@
 
 	// Vid/image toggling
 
-	.car-slide {
+	.car-media {
+
+		text-align: left;
 
 		&.vid-on {
 			.car-image {
@@ -293,7 +304,7 @@
 	%car-header {
 		display: inline-block;
 		vertical-align: middle;
-		margin: 0 8px;
+		margin: 0 2px;
 	}
 
 	.car-name {
@@ -303,16 +314,78 @@
 		font-family: $asap_b;
 	}
 
+
+	.num-sold {
+		@extend %car-header;
+		background-color: $green;
+		color: #fff;
+		padding: 8px 8px 8px 18px;
+		position: relative;
+		font-family: $asap;
+
+		&:before {
+			content:'';
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 21px 0 21px 10px;
+			border-color: transparent transparent transparent $white;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&:after {
+			content:'';
+			display: block;
+			height: 2px;
+			position: absolute;
+			left: 4px;
+			right: 2px;
+			top: 2px;
+			background-color: #8dcd6c;
+		}
+
+	}
+
+	.digit-sold {
+		color: $yellow;
+		font-family: $asap_b;
+	}
+
+	.safety-rating {
+		@extend %car-header;
+		background-color: $black;
+		position: relative;
+		color: #fff;
+		padding: 8px 30px 8px 8px;
+
+		&:after {
+			content:'';
+			display: block;
+			height: 2px;
+			position: absolute;
+			left: 2px;
+			right: 2px;
+			top: 2px;
+			background-color: #7e7e7e;
+		}
+	}
+
 	.star-count {
 		@extend %car-header;
 		padding: 8px;
-		position: relative;
+		position: absolute;
+		z-index: 2;
 		color: #fff;
-		padding: 10px 15px 0;
+		padding: 15px 20px 0;
+		top: -6px;
+		right: -30px;
 
 		&:before {
 			color: $orange;
-			font-size: 48px;
+			font-size: 60px;
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -321,21 +394,12 @@
 		}
 	}
 
-	.num-sold {
-		@extend %car-header;
-		@extend %rounded-corner;
-		background-color: $green;
-		color: #fff;
-		font-weight: bold;
-		padding: 8px;
-	}
-
 	.vid-toggle {
 		cursor: pointer;
 		border-bottom-right-radius: 4px;
 		border-bottom-left-radius: 4px;
 		position: absolute !important;
-		top: 20px; // 20px = padding on top of slides
+		top: 0;
 		right: 120px;
 		background-color: $green;
 		color: #fff;
@@ -345,7 +409,7 @@
 	}
 
 	.car-blurb {
-		font-size: 22px;
+		font-size: 18px;
 		display: block;
 		padding: 0 16px;
 		text-align: justify;
