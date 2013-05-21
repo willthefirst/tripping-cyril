@@ -19,8 +19,8 @@ var Reveal = (function(){
 
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions
-			width: 960*.75,
-			height: 700*.75,
+			width: 960*0.75,
+			height: 700*0.75,
 
 			// Factor of the display size that should remain empty around the content
 			margin: 0.1,
@@ -33,7 +33,7 @@ var Reveal = (function(){
 			controls: true,
 
 			// Display a presentation progress bar
-			progress: true,
+			progress: false,
 
 			// Push each slide change to the browser history
 			history: false,
@@ -42,10 +42,10 @@ var Reveal = (function(){
 			keyboard: true,
 
 			// Enable the slide overview mode
-			overview: true,
+			overview: false,
 
 			// Vertical centring of slides
-			center: true,
+			center: false,
 
 			// Enables touch navigation on devices with touch input
 			touch: true,
@@ -68,7 +68,7 @@ var Reveal = (function(){
 			mouseWheel: false,
 
 			// Apply a 3D roll to links on hover
-			rollingLinks: true,
+			rollingLinks: false,
 
 			// Theme (see /css/theme)
 			theme: null,

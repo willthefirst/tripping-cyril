@@ -7,8 +7,6 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
 @import "fonts";
-@import "reveal";
-
 
 /* 	Variables, Mixins, Global Extends
 	------------------------------------------------------- */
@@ -42,6 +40,9 @@
 		@include clearfix;
 	}
 
+	// Reveal.scss benefits from variables by being placed after them here.
+	@import "reveal";
+
 
 /* 	Global
 	------------------------------------------------------- */
@@ -59,7 +60,7 @@
 
 	.bg-bot {
 		position: absolute;
-		bottom: 0;
+		bottom: -50px;
 		width: $bg_w;
 		height: $bg_h;
 		left: 50%;
@@ -79,7 +80,7 @@
 		display: block;
 		background: url('../images/logo-gumtree.png') no-repeat;
 		position: fixed;
-		margin: 10px;
+		margin: 4px 10px;
 		font-size: 0;
 		width: 68px;
 		z-index: 1;
@@ -140,6 +141,12 @@
 		margin-right: 20px;
 	}
 
+	.reveal {
+		position: relative;
+		top: 47px;
+		height: 69%;
+	}
+
 /* 	Navigation
 	------------------------------------------------------- */
 
@@ -147,8 +154,8 @@
 		position: fixed;
 		top: 0;
 		right: 0;
-		font-size: 24px;
-		padding: 20px 30px;
+		font-size: 20px;
+		padding: 8px 20px;
 		cursor: pointer;
 		z-index: 40;
 
@@ -291,8 +298,9 @@
 
 	.car-name {
 		@extend %car-header;
-		font-size: 2em;
-		line-height: 1.8em;
+		font-size: 1.9em;
+		line-height: 1.9em;
+		font-family: $asap_b;
 	}
 
 	.star-count {
@@ -337,7 +345,9 @@
 	}
 
 	.car-blurb {
-		text-align: left;
+		font-size: 22px;
 		display: block;
-		padding: 0 100px;
+		padding: 0 16px;
+		text-align: justify;
+		margin: auto;
 	}

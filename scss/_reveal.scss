@@ -373,7 +373,7 @@ body {
 		left: 40px;
 
 		border-right-width: 22px;
-		border-right-color: #eee;
+		border-right-color: $orange;
 	}
 		.reveal .controls div.navigate-left.fragmented {
 			opacity: 0.3;
@@ -384,7 +384,7 @@ body {
 		top: 42px;
 
 		border-left-width: 22px;
-		border-left-color: #eee;
+		border-left-color: $orange;
 	}
 		.reveal .controls div.navigate-right.fragmented {
 			opacity: 0.3;
@@ -394,7 +394,7 @@ body {
 		left: 42px;
 
 		border-bottom-width: 22px;
-		border-bottom-color: #eee;
+		border-bottom-color: $orange;
 	}
 		.reveal .controls div.navigate-up.fragmented {
 			opacity: 0.3;
@@ -405,7 +405,7 @@ body {
 		top: 74px;
 
 		border-top-width: 22px;
-		border-top-color: #eee;
+		border-top-color: $orange;
 	}
 		.reveal .controls div.navigate-down.fragmented {
 			opacity: 0.3;
