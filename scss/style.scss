@@ -15,7 +15,9 @@
 
 	$orange: #FF4700;
 	$green: #7FB47A;
+	$green-lime: #5cb92e;
 	$gray: #d2d3d5;
+	$white: #f1f2f2;
 
 	/* 	Fonts  -------------------------------------------- */
 
@@ -45,7 +47,7 @@
 	------------------------------------------------------- */
 
 	body {
-		background-color: $gray;
+		background-color: $white;
 		position: relative;
 		font-family: $asap;
 		font-size: 22px;
@@ -53,18 +55,24 @@
 	}
 
 	$bg_w: 1500px;
-	$bg_h: 900px;
+	$bg_h: 280px;
 
-	.bg {
-		top: 0;
-		// border-top: 34px solid #5cb92e;
+	.bg-bot {
 		position: absolute;
 		bottom: 0;
-		height: $bg_h;
 		width: $bg_w;
+		height: $bg_h;
 		left: 50%;
 		margin-left: (-$bg_w/2);
-		background: url("../images/bg.png") 0 0 no-repeat;
+		background: url("../images/bg-bot.png") 0 0 no-repeat;
+	}
+
+	.bg-top {
+		position: absolute;
+		top: 0;
+		height: 57px;
+		width: 100%;
+		background: url("../images/bg-top.png") 0 0 repeat-x;
 	}
 
 	.logo {
