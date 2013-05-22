@@ -98,48 +98,47 @@
 		}
 	}
 
-	$references-pull: -166px;
 	.references {
-		@extend %rounded-corner;
-		-webkit-transition: -webkit-transform .5s ease;
-		-moz-transition: -moz-transform .5s ease;
-		-ms-transition: -ms-transform .5s ease;
-		-o-transition: -o-transform .5s ease;
-		transition: transform .5s ease;
-		background-color: $green;
-		position: fixed;
+		position: absolute;
+		bottom:72px;
+		right: 0;
 		left: 0;
-		bottom: 46px;
-		border: 1px solid #666;
+		font-family: $delicious;
+		font-size: 18px;
+		margin: auto;
+		display: block;
+		text-align: center;
 		z-index: 2;
-		padding: 10px;
-		display: table;
-		@include translate3d($references-pull, 0, 0);
-
-		&:hover {
-			@include translate3d(0, 0, 0);
-		}
-		a {
-			display: block;
+		h3 {
 			color: #fff;
-			padding: 4px;
-		}
+			font-size: 24px;
+			font-family: $delicious_b;
+			display: inline-block;
 
-		.icon-ellipsis-horizontal {
-			display: block;
-			color: #fff;
-			display: table-cell;
-			vertical-align: middle;
 		}
-	}
+		ul {
+			display: inline-block;
+			list-style-type: bullet;
+		}
+		li {
+			padding-bottom: 22px;
+			display: inline-block;
+			padding-left: 8px;
+			position: relative;
+			a {
+				color: #fff;
+			}
 
-	//IE9 fallback
-	.no-transforms {
-		margin-right: 0;
-		.references {
-			margin-left: $references-pull;
-			&:hover {
-				margin-left: 0;
+			&:first-child:before {
+				display: none;
+			}
+
+			&:before {
+				content:'|';
+				position: absolute;
+				left: 0;
+				top: 1px;
+				color: $yellow;
 			}
 		}
 	}
