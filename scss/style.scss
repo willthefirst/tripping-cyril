@@ -288,9 +288,43 @@
 		display: none;
 		// @include rotateX(180deg);
 		left: 0;
+		height: 300px;
+		width: 100%;
 	}
 
 	// Vid/image toggling
+
+	.vid-toggle {
+		@include transition(top, .5s);
+		font-size: 16px;
+		line-height: 16px;
+		cursor: pointer;
+		position: absolute !important;
+		top: -0px;
+		right: 120px;
+		background-color: $orange;
+		color: #fff;
+		display: block;
+		padding: 10px 0 6px !important;
+		text-decoration: none;
+		width: 150px;
+		text-align: center;
+
+		&:after {
+			content:'';
+			display: block;
+			height: 2px;
+			position: absolute;
+			left: 2px;
+			right: 2px;
+			top: 2px;
+			background-color: $orange + #555;
+		}
+	}
+
+	.img-back {
+		display: none;
+	}
 
 	.car-media {
 
@@ -304,6 +338,18 @@
 			.car-vid {
 				display: inline;
 				// @include rotateX(0deg);
+			}
+
+			.vid-toggle {
+				@include translate3d(0, -32px, 0);
+			}
+
+			.img-back {
+				display: inline;
+			}
+
+			.vid-back {
+				display: none;
 			}
 		}
 	}
@@ -428,31 +474,6 @@
 			bottom: 0;
 			left: 0;
 			z-index: -1;
-		}
-	}
-
-	.vid-toggle {
-		font-size: 16px;
-		line-height: 16px;
-		cursor: pointer;
-		position: absolute !important;
-		top: -0px;
-		right: 120px;
-		background-color: $orange;
-		color: #fff;
-		display: block;
-		padding: 10px 10px 6px !important;
-		text-decoration: none;
-
-		&:after {
-			content:'';
-			display: block;
-			height: 2px;
-			position: absolute;
-			left: 2px;
-			right: 2px;
-			top: 2px;
-			background-color: $orange + #555;
 		}
 	}
 
