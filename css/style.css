@@ -1830,7 +1830,12 @@ a {
 
 /* 	Car slide
 	------------------------------------------------------- */
-/* line 269, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
+.car-slide {
+  text-align: left;
+}
+
+/* line 272, ../scss/style.scss */
 .car-media {
   overflow: hidden;
   height: 340px;
@@ -1840,47 +1845,73 @@ a {
   position: relative;
 }
 
-/* line 277, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .car-image {
   display: block;
   margin: auto;
   height: 300px;
 }
 
-/* line 284, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .car-vid {
   display: none;
   left: 0;
 }
 
-/* line 292, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .car-media {
   text-align: left;
 }
-/* line 297, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 .car-media.vid-on .car-image {
   display: none;
 }
-/* line 301, ../scss/style.scss */
+/* line 304, ../scss/style.scss */
 .car-media.vid-on .car-vid {
   display: inline;
 }
 
-/* line 308, ../scss/style.scss */
-.car-name, .num-sold, .safety-rating, .star-count {
+/* line 311, ../scss/style.scss */
+.car-num, .car-name, .num-sold, .safety-rating, .star-count {
   display: inline-block;
   vertical-align: middle;
   margin: 0 2px;
 }
 
-/* line 314, ../scss/style.scss */
+/* line 317, ../scss/style.scss */
+.car-num {
+  background-color: #ff4700;
+  font-size: 22px;
+  line-height: 37px;
+  font-family: "asapregular", sans-serif;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+  position: relative;
+  color: #fff;
+  margin-right: 8px;
+  margin-top: -5px;
+}
+/* line 331, ../scss/style.scss */
+.car-num:after {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  background-color: #ff9c55;
+}
+
+/* line 343, ../scss/style.scss */
 .car-name {
   font-size: 1.9em;
   line-height: 1.9em;
   font-family: "asapbold", sans-serif;
 }
 
-/* line 322, ../scss/style.scss */
+/* line 351, ../scss/style.scss */
 .num-sold {
   background-color: #5cb92e;
   color: #fff;
@@ -1888,7 +1919,7 @@ a {
   position: relative;
   font-family: "asapregular", sans-serif;
 }
-/* line 330, ../scss/style.scss */
+/* line 359, ../scss/style.scss */
 .num-sold:before {
   content: '';
   display: block;
@@ -1901,7 +1932,7 @@ a {
   top: 0;
   left: 0;
 }
-/* line 343, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 .num-sold:after {
   content: '';
   display: block;
@@ -1913,20 +1944,20 @@ a {
   background-color: #8dcd6c;
 }
 
-/* line 356, ../scss/style.scss */
+/* line 385, ../scss/style.scss */
 .digit-sold {
   color: #ffef61;
   font-family: "asapbold", sans-serif;
 }
 
-/* line 361, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 .safety-rating {
   background-color: #464646;
   position: relative;
   color: #fff;
   padding: 8px 30px 8px 8px;
 }
-/* line 368, ../scss/style.scss */
+/* line 397, ../scss/style.scss */
 .safety-rating:after {
   content: '';
   display: block;
@@ -1938,7 +1969,7 @@ a {
   background-color: #7e7e7e;
 }
 
-/* line 380, ../scss/style.scss */
+/* line 409, ../scss/style.scss */
 .star-count {
   padding: 8px;
   position: absolute;
@@ -1948,7 +1979,7 @@ a {
   top: -6px;
   right: -30px;
 }
-/* line 390, ../scss/style.scss */
+/* line 419, ../scss/style.scss */
 .star-count:before {
   color: #ff4700;
   font-size: 60px;
@@ -1959,7 +1990,7 @@ a {
   z-index: -1;
 }
 
-/* line 401, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 .vid-toggle {
   cursor: pointer;
   border-bottom-right-radius: 4px;
@@ -1974,11 +2005,10 @@ a {
   text-decoration: none;
 }
 
-/* line 415, ../scss/style.scss */
+/* line 444, ../scss/style.scss */
 .car-blurb {
   font-size: 18px;
   display: block;
-  padding: 0 16px;
   text-align: justify;
   margin: auto;
 }

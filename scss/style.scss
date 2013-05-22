@@ -265,6 +265,9 @@
 
 /* 	Car slide
 	------------------------------------------------------- */
+	.car-slide {
+		text-align: left;
+	}
 
 	.car-media {
 		overflow: hidden;
@@ -309,6 +312,32 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0 2px;
+	}
+
+	.car-num {
+		@extend %car-header;
+		background-color: $orange;
+		font-size: 22px;
+		line-height: 37px;
+		font-family: $asap;
+		padding: 2px;
+		text-align: center;
+		width: 40px;
+		position: relative;
+		color: #fff;
+		margin-right: 8px;
+		margin-top: -5px;
+
+		&:after {
+			content:'';
+			display: block;
+			height: 2px;
+			position: absolute;
+			left: 2px;
+			right: 2px;
+			top: 2px;
+			background-color: $orange + #555;
+		}
 	}
 
 	.car-name {
@@ -415,7 +444,6 @@
 	.car-blurb {
 		font-size: 18px;
 		display: block;
-		padding: 0 16px;
 		text-align: justify;
 		margin: auto;
 	}
