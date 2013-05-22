@@ -525,7 +525,7 @@ body {
 .reveal .controls {
   display: none;
   position: absolute;
-  height: 110px;
+  height: 0;
   z-index: 30;
   top: 40%;
   left: 0;
@@ -1746,37 +1746,41 @@ a {
 
 /* line 190, ../scss/style.scss */
 .nav-header {
-  font-size: 32px;
-  line-height: 40px;
-  margin-top: 38px;
-  margin-bottom: 15px;
-  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 5px 0 15px;
+  color: white;
+  text-align: left;
   color: #fff;
-  text-align: center;
   font-family: "deliciousbold", sans-serif;
+  top: 0;
+  margin-left: 14px;
+  color: #ffef61;
+  text-decoration: underline;
 }
 
-/* line 201, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 .nav-slider {
   -webkit-transition: -webkit-transform .5s ease;
   -moz-transition: -moz-transform .5s ease;
   -ms-transition: -ms-transform .5s ease;
   -o-transition: -o-transform .5s ease;
   transition: transform .5s ease;
-  padding: 20px 0 20px;
+  padding-bottom: 20px;
   background-color: #d2d3d5;
   background-color: green;
   position: absolute;
   right: 0;
   z-index: 40;
   width: 280px;
+  height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 218, ../scss/style.scss */
+/* line 222, ../scss/style.scss */
 .nav-slider.off {
   -webkit-transform: translate3d(281px, 0, 0);
   -moz-transform: translate3d(281px, 0, 0);
@@ -1785,32 +1789,32 @@ a {
   transform: translate3d(281px, 0, 0);
 }
 
-/* line 224, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .no-transforms {
   margin-right: 0;
 }
-/* line 226, ../scss/style.scss */
+/* line 230, ../scss/style.scss */
 .no-transforms .nav-slider {
   margin-right: 0;
 }
-/* line 228, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 .no-transforms .nav-slider.off {
   margin-right: -281px;
 }
 
-/* line 234, ../scss/style.scss */
+/* line 238, ../scss/style.scss */
 .nav-list {
   display: block;
   padding-left: 62px;
 }
-/* line 237, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .nav-list ol {
   list-style-type: decimal;
   display: block;
   margin: auto;
   color: #fff;
 }
-/* line 245, ../scss/style.scss */
+/* line 249, ../scss/style.scss */
 .nav-list ol li a {
   color: #fff;
   display: inline-block;
@@ -1819,14 +1823,14 @@ a {
   padding: 2px 0;
   margin-bottom: 6px;
 }
-/* line 253, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 .nav-list ol li a:hover {
   color: #5cb92e;
 }
 
 /* 	Car slide
 	------------------------------------------------------- */
-/* line 265, ../scss/style.scss */
+/* line 269, ../scss/style.scss */
 .car-media {
   overflow: hidden;
   height: 340px;
@@ -1836,47 +1840,47 @@ a {
   position: relative;
 }
 
-/* line 273, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .car-image {
   display: block;
   margin: auto;
   height: 300px;
 }
 
-/* line 280, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .car-vid {
   display: none;
   left: 0;
 }
 
-/* line 288, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 .car-media {
   text-align: left;
 }
-/* line 293, ../scss/style.scss */
+/* line 297, ../scss/style.scss */
 .car-media.vid-on .car-image {
   display: none;
 }
-/* line 297, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 .car-media.vid-on .car-vid {
   display: inline;
 }
 
-/* line 304, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .car-name, .num-sold, .safety-rating, .star-count {
   display: inline-block;
   vertical-align: middle;
   margin: 0 2px;
 }
 
-/* line 310, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .car-name {
   font-size: 1.9em;
   line-height: 1.9em;
   font-family: "asapbold", sans-serif;
 }
 
-/* line 318, ../scss/style.scss */
+/* line 322, ../scss/style.scss */
 .num-sold {
   background-color: #5cb92e;
   color: #fff;
@@ -1884,7 +1888,7 @@ a {
   position: relative;
   font-family: "asapregular", sans-serif;
 }
-/* line 326, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 .num-sold:before {
   content: '';
   display: block;
@@ -1897,7 +1901,7 @@ a {
   top: 0;
   left: 0;
 }
-/* line 339, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 .num-sold:after {
   content: '';
   display: block;
@@ -1909,20 +1913,20 @@ a {
   background-color: #8dcd6c;
 }
 
-/* line 352, ../scss/style.scss */
+/* line 356, ../scss/style.scss */
 .digit-sold {
   color: #ffef61;
   font-family: "asapbold", sans-serif;
 }
 
-/* line 357, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
 .safety-rating {
   background-color: #464646;
   position: relative;
   color: #fff;
   padding: 8px 30px 8px 8px;
 }
-/* line 364, ../scss/style.scss */
+/* line 368, ../scss/style.scss */
 .safety-rating:after {
   content: '';
   display: block;
@@ -1934,7 +1938,7 @@ a {
   background-color: #7e7e7e;
 }
 
-/* line 376, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .star-count {
   padding: 8px;
   position: absolute;
@@ -1944,7 +1948,7 @@ a {
   top: -6px;
   right: -30px;
 }
-/* line 386, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 .star-count:before {
   color: #ff4700;
   font-size: 60px;
@@ -1955,7 +1959,7 @@ a {
   z-index: -1;
 }
 
-/* line 397, ../scss/style.scss */
+/* line 401, ../scss/style.scss */
 .vid-toggle {
   cursor: pointer;
   border-bottom-right-radius: 4px;
@@ -1970,7 +1974,7 @@ a {
   text-decoration: none;
 }
 
-/* line 411, ../scss/style.scss */
+/* line 415, ../scss/style.scss */
 .car-blurb {
   font-size: 18px;
   display: block;

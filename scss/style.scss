@@ -188,14 +188,17 @@
 	}
 
 	.nav-header {
-		font-size: 32px;
-		line-height: 40px;
-		margin-top: 38px;
-		margin-bottom: 15px;
-		font-weight: bold;
+		font-size: 22px;
+		line-height: 28px;
+		margin: 5px 0 15px;
+		color: rgb(255, 255, 255);
+		text-align: left;
 		color: #fff;
-		text-align: center;
 		font-family: $delicious_b;
+		top: 0;
+		margin-left: 14px;
+		color: $yellow;
+		text-decoration: underline;
 	}
 
 	.nav-slider {
@@ -205,7 +208,7 @@
 		-ms-transition: -ms-transform .5s ease;
 		-o-transition: -o-transform .5s ease;
 		transition: transform .5s ease;
-		padding: 20px 0 20px;
+		padding-bottom: 20px;
 		background-color: $gray;
 		@extend .clearfix;
 		background-color: green;
@@ -213,6 +216,7 @@
 		right: 0;
 		z-index: 40;
 		width: 280px;
+		height: 100%;
 		@include translate3d(0, 0, 0);
 
 		&.off {
