@@ -89,8 +89,13 @@
 	}
 
 	a {
+		color: $orange;
 		text-decoration: none;
 		@include single-transition(color, .1s , linear);
+
+		&:visited {
+			color: $orange + #271;
+		}
 	}
 
 	$references-pull: -166px;
@@ -462,19 +467,30 @@
 		position: absolute;
 		z-index: 2;
 		color: #fff;
-		padding: 15px 20px 0;
-		top: -6px;
-		right: -30px;
+		padding: 17px 23px 0;
+		top: -10px;
+		right: -35px;
+		font-family: $asap_b;
 
 		&:before {
+			font-family: fontAwesome;
 			color: $orange;
-			font-size: 60px;
+			font-size: 62px;
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 0;
 			z-index: -1;
 		}
+	}
+
+	.rating-4:before {
+		color: $orange + #243;
+	}
+
+
+	.rating-5:before {
+		color: $orange;
 	}
 
 	.car-blurb {
