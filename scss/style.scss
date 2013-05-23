@@ -289,11 +289,19 @@
 	}
 
 	.car-vid {
-		display: none;
 		// @include rotateX(180deg);
 		left: 0;
 		height: 300px;
 		width: 100%;
+	}
+
+	.car-vid-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		z-index: -1;
 	}
 
 	// Vid/image toggling
@@ -339,9 +347,9 @@
 				display: none;
 				// @include rotateX(180deg);
 			}
-			.car-vid {
-				display: inline;
-				// @include rotateX(0deg);
+			.car-vid-container {
+				height:auto;
+				z-index: 0;
 			}
 
 			.vid-toggle {
