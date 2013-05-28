@@ -9,11 +9,28 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/modernizr.js"></script>
 		<script src="js/script.js"></script>
-
-
 		<!--[if lt IE 9]>
 		<script src="js/plugins/html5shiv.js"></script>
 		<![endif]-->
+
+		<script type="text/javascript">
+		//<![CDATA[
+		  (function() {
+		    var shr = document.createElement('script');
+		    shr.src = '//dtym7iokkjlif.cloudfront.net/assets/pub/shareaholic.js';
+		    shr.type = 'text/javascript'; shr.async = 'true';
+		    shr.onload = shr.onreadystatechange = function() {
+		      var rs = this.readyState;
+		      if (rs && rs != 'complete' && rs != 'loaded') return;
+		      var apikey = '8294dfebff0e63d95bc64c26dbdeeb6d'
+		      try { Shareaholic.init(apikey); } catch (e) {}
+		    };
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(shr, s);
+		  })();
+		//]]>
+		</script>
+
 	</head>
 
 	<body>
@@ -58,7 +75,7 @@
 			</span>
 		</a>
 		<footer class="references">
-			<ul>
+			<ul class="reference-list">
 				<li>
 					<a target="_blank" href="http://www.latinncap.com/en/">Star rating provided by Latin NCAP</a>
 				</li>
@@ -73,6 +90,7 @@
 				</li>
 			</ul>
 			<p>As of May 2013, safety ratings and crash test videos from Latin NCAP and Euro NCAP were only available on select models.</p>
+			<div class='shareaholic-canvas' data-app='share_buttons' data-app-id='7032'></div>
 		</footer>
 		<div class="reveal">
 			<div class="slides">
@@ -98,7 +116,7 @@
 						<img src="images/cars/slide2.png" class="car-image" />
 						<span class="vid-toggle"><span class="vid-back">Watch The Video</span><span class="img-back">Back To Image</span></span>
 						<div class="car-vid-container" id="js-car-vid-02">
-							<iframe class="car-vid" width="100%" height="300" src="http://www.youtube.com/embed/aZF8N9NItHI?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+							<iframe class="car-vid" width="100%" height="300" src="http://www.youtube.com/embed/USas_poHSSI?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
 					<h1 class="car-name"><span class="car-num">2</span>VW Polo Vivo</h1>
@@ -414,6 +432,5 @@
 			});
 
 		</script>
-		<script type="text/javascript" src="http://cdn.wibiya.com/Toolbars/dir_1425/Toolbar_1425183/Loader_1425183.js"></script><noscript><a href="http://www.wibiya.com/">Web Toolbar by Wibiya</a></noscript>
 	</body>
 </html>
