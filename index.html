@@ -12,25 +12,6 @@
 		<!--[if lt IE 9]>
 		<script src="js/plugins/html5shiv.js"></script>
 		<![endif]-->
-
-		<script type="text/javascript">
-		//<![CDATA[
-		  (function() {
-		    var shr = document.createElement('script');
-		    shr.src = '//dtym7iokkjlif.cloudfront.net/assets/pub/shareaholic.js';
-		    shr.type = 'text/javascript'; shr.async = 'true';
-		    shr.onload = shr.onreadystatechange = function() {
-		      var rs = this.readyState;
-		      if (rs && rs != 'complete' && rs != 'loaded') return;
-		      var apikey = '8294dfebff0e63d95bc64c26dbdeeb6d'
-		      try { Shareaholic.init(apikey); } catch (e) {}
-		    };
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(shr, s);
-		  })();
-		//]]>
-		</script>
-
 	</head>
 
 	<body>
@@ -432,5 +413,25 @@
 			});
 
 		</script>
+
+		<!-- Shareaholic -->
+		<script type="text/javascript">
+		//<![CDATA[
+		  (function() {
+		    var shr = document.createElement('script');
+		    shr.src = '//dtym7iokkjlif.cloudfront.net/assets/pub/shareaholic.js';
+		    shr.type = 'text/javascript'; shr.async = 'true';
+		    shr.onload = shr.onreadystatechange = function() {
+		      var rs = this.readyState;
+		      if (rs && rs != 'complete' && rs != 'loaded') return;
+		      var apikey = '8294dfebff0e63d95bc64c26dbdeeb6d'
+		      try { Shareaholic.init(apikey); } catch (e) {}
+		    };
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(shr, s);
+		  })();
+		//]]>
+		</script>
+
 	</body>
 </html>
