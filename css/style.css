@@ -1693,23 +1693,14 @@ a:visited {
   color: #fff;
   font-size: 14px;
 }
-/* line 154, ../scss/style.scss */
-.references .shareaholic-canvas {
-  margin: auto;
-  display: inline-block;
-}
-/* line 158, ../scss/style.scss */
-.references .shareaholic-canvas li {
-  display: list-item !important;
-}
 
-/* line 164, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 .reference-links {
   float: left;
   margin-right: 20px;
 }
 
-/* line 169, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 .reveal {
   position: relative;
   top: 47px;
@@ -1720,7 +1711,7 @@ a:visited {
 
 /* 	Navigation
 	------------------------------------------------------- */
-/* line 180, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .nav-toggle {
   position: fixed;
   top: 0;
@@ -1730,30 +1721,30 @@ a:visited {
   cursor: pointer;
   z-index: 40;
 }
-/* line 189, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .nav-toggle .nav-on {
   display: none;
   color: #fff;
 }
-/* line 194, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .nav-toggle .nav-off {
   display: block;
 }
-/* line 199, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 .nav-toggle.off .nav-on {
   display: block;
 }
-/* line 203, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .nav-toggle.off .nav-off {
   display: none;
 }
 
-/* line 209, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
 .nav-off {
   color: #fff;
 }
 
-/* line 213, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 .nav-header {
   font-size: 22px;
   line-height: 28px;
@@ -1768,7 +1759,7 @@ a:visited {
   text-decoration: underline;
 }
 
-/* line 227, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .nav-slider {
   -webkit-transition: -webkit-transform .5s ease;
   -moz-transition: -moz-transform .5s ease;
@@ -1789,7 +1780,7 @@ a:visited {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 245, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
 .nav-slider.off {
   -webkit-transform: translate3d(281px, 0, 0);
   -moz-transform: translate3d(281px, 0, 0);
@@ -1798,32 +1789,28 @@ a:visited {
   transform: translate3d(281px, 0, 0);
 }
 
-/* line 251, ../scss/style.scss */
-.no-transforms {
+/* line 243, ../scss/style.scss */
+.no-csstransforms3d .nav-slider {
   margin-right: 0;
 }
-/* line 253, ../scss/style.scss */
-.no-transforms .nav-slider {
-  margin-right: 0;
-}
-/* line 255, ../scss/style.scss */
-.no-transforms .nav-slider.off {
+/* line 245, ../scss/style.scss */
+.no-csstransforms3d .nav-slider.off {
   margin-right: -281px;
 }
 
-/* line 261, ../scss/style.scss */
+/* line 251, ../scss/style.scss */
 .nav-list {
   display: block;
   padding-left: 62px;
 }
-/* line 264, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 .nav-list ol {
   list-style-type: decimal;
   display: block;
   margin: auto;
   color: #fff;
 }
-/* line 272, ../scss/style.scss */
+/* line 262, ../scss/style.scss */
 .nav-list ol li a {
   color: #fff;
   display: inline-block;
@@ -1832,19 +1819,19 @@ a:visited {
   padding: 2px 0;
   margin-bottom: 6px;
 }
-/* line 280, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .nav-list ol li a:hover {
   color: #5cb92e;
 }
 
 /* 	Car slide
 	------------------------------------------------------- */
-/* line 291, ../scss/style.scss */
+/* line 281, ../scss/style.scss */
 .car-slide {
   text-align: left;
 }
 
-/* line 295, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .car-media {
   height: 300px;
   width: 700px;
@@ -1853,21 +1840,21 @@ a:visited {
   position: relative;
 }
 
-/* line 302, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 .car-image {
   display: block;
   margin: auto;
   height: 300px;
 }
 
-/* line 309, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 .car-vid {
   left: 0;
   height: 300px;
   width: 100%;
 }
 
-/* line 316, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .car-vid-container {
   position: absolute;
   top: 0;
@@ -1877,7 +1864,7 @@ a:visited {
   overflow: hidden;
 }
 
-/* line 327, ../scss/style.scss */
+/* line 317, ../scss/style.scss */
 .vid-toggle {
   -webkit-transition: top, 0.5s;
   -moz-transition: top, 0.5s;
@@ -1897,7 +1884,7 @@ a:visited {
   width: 150px;
   text-align: center;
 }
-/* line 343, ../scss/style.scss */
+/* line 333, ../scss/style.scss */
 .vid-toggle:after {
   content: '';
   display: block;
@@ -1909,24 +1896,24 @@ a:visited {
   background-color: #ff9c55;
 }
 
-/* line 355, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 .img-back {
   display: none;
 }
 
-/* line 359, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 .car-media {
   text-align: left;
 }
-/* line 364, ../scss/style.scss */
+/* line 354, ../scss/style.scss */
 .car-media.vid-on .car-image {
   display: none;
 }
-/* line 368, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 .car-media.vid-on .car-vid-container {
   right: 0;
 }
-/* line 372, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 .car-media.vid-on .vid-toggle {
   -webkit-transform: translate3d(0, -32px, 0);
   -moz-transform: translate3d(0, -32px, 0);
@@ -1934,29 +1921,29 @@ a:visited {
   -o-transform: translate3d(0, -32px, 0);
   transform: translate3d(0, -32px, 0);
 }
-/* line 376, ../scss/style.scss */
+/* line 366, ../scss/style.scss */
 .car-media.vid-on .img-back {
   display: inline;
 }
-/* line 380, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .car-media.vid-on .vid-back {
   display: none;
 }
 
-/* line 386, ../scss/style.scss */
+/* line 376, ../scss/style.scss */
 .car-num, .car-name, .num-sold, .safety-rating, .star-count {
   display: inline-block;
   vertical-align: middle;
   margin: 0 2px;
 }
 
-/* line 392, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 .car-info {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-/* line 397, ../scss/style.scss */
+/* line 387, ../scss/style.scss */
 .car-num {
   background-color: #ff4700;
   font-size: 22px;
@@ -1970,7 +1957,7 @@ a:visited {
   margin-right: 8px;
   margin-top: -5px;
 }
-/* line 411, ../scss/style.scss */
+/* line 401, ../scss/style.scss */
 .car-num:after {
   content: '';
   display: block;
@@ -1982,14 +1969,14 @@ a:visited {
   background-color: #ff9c55;
 }
 
-/* line 423, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 .car-name {
   font-size: 1.7em;
   line-height: 1.9em;
   font-family: "asapbold", sans-serif;
 }
 
-/* line 431, ../scss/style.scss */
+/* line 421, ../scss/style.scss */
 .num-sold {
   background-color: #5cb92e;
   color: #fff;
@@ -1997,7 +1984,7 @@ a:visited {
   position: relative;
   font-family: "asapregular", sans-serif;
 }
-/* line 439, ../scss/style.scss */
+/* line 429, ../scss/style.scss */
 .num-sold:before {
   content: '';
   display: block;
@@ -2010,7 +1997,7 @@ a:visited {
   top: 0;
   left: 0;
 }
-/* line 452, ../scss/style.scss */
+/* line 442, ../scss/style.scss */
 .num-sold:after {
   content: '';
   display: block;
@@ -2022,20 +2009,20 @@ a:visited {
   background-color: #8dcd6c;
 }
 
-/* line 464, ../scss/style.scss */
+/* line 454, ../scss/style.scss */
 .digit-sold {
   color: #ffef61;
   font-family: "asapbold", sans-serif;
 }
 
-/* line 469, ../scss/style.scss */
+/* line 459, ../scss/style.scss */
 .safety-rating {
   background-color: #464646;
   position: relative;
   color: #fff;
   padding: 8px 30px 8px 8px;
 }
-/* line 476, ../scss/style.scss */
+/* line 466, ../scss/style.scss */
 .safety-rating:after {
   content: '';
   display: block;
@@ -2047,7 +2034,7 @@ a:visited {
   background-color: #7e7e7e;
 }
 
-/* line 488, ../scss/style.scss */
+/* line 478, ../scss/style.scss */
 .star-count {
   padding: 8px;
   position: absolute;
@@ -2058,7 +2045,7 @@ a:visited {
   right: -35px;
   font-family: "asapbold", sans-serif;
 }
-/* line 499, ../scss/style.scss */
+/* line 489, ../scss/style.scss */
 .star-count:before {
   font-family: fontAwesome;
   color: #ff4700;
@@ -2070,17 +2057,17 @@ a:visited {
   z-index: -1;
 }
 
-/* line 511, ../scss/style.scss */
+/* line 501, ../scss/style.scss */
 .rating-4:before {
   color: #ff8b33;
 }
 
-/* line 516, ../scss/style.scss */
+/* line 506, ../scss/style.scss */
 .rating-5:before {
   color: #ff4700;
 }
 
-/* line 520, ../scss/style.scss */
+/* line 510, ../scss/style.scss */
 .car-blurb {
   font-size: 18px;
   display: block;
