@@ -341,6 +341,10 @@ body {
 	top: 40%;
 	left: 0;
 	right: 0;
+
+	.navigate-left, .navigate-right {
+
+	}
 }
 
 .reveal .controls div {
@@ -374,6 +378,10 @@ body {
 
 		border-right-width: 22px;
 		border-right-color: $orange;
+
+		@media screen and (max-width:400px) {
+			display: none !important;
+		}
 	}
 		.reveal .controls div.navigate-left.fragmented {
 			opacity: 0.3;
@@ -385,6 +393,10 @@ body {
 
 		border-left-width: 22px;
 		border-left-color: $orange;
+
+		@media screen and (max-width:400px) {
+			display: none !important;
+		}
 	}
 		.reveal .controls div.navigate-right.fragmented {
 			opacity: 0.3;

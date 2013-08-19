@@ -276,6 +276,12 @@
 		}
 	}
 
+	.reveal .controls {
+		@media screen and (max-width:400px) {
+			display: none !important;
+		}
+	}
+
 /* 	Car slide
 	------------------------------------------------------- */
 	.car-slide {
