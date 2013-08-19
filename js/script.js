@@ -32,26 +32,39 @@ var APP = {
 
 	currentVidID: '',
 
-	vidToggle: function() {
+    vidToggle: function() {
 
-		$('.vid-back').on('click', function() {
-			APP.currentVidID = $(this).parent().siblings('.car-vid-container').attr('id');
-			$(this).parent().parent().toggleClass('vid-on');
-			callPlayer(APP.currentVidID, "playVideo");
-		});
+        var userAgent = window.navigator.userAgent;
+        var automatic = true;
 
-		$('.img-back').on('click', function() {
-			APP.currentVidID = $(this).parent().siblings('.car-vid-container').attr('id');
+        if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+           automatic = false;
+        }
 
-			$(this).parent().parent().toggleClass('vid-on');
-			callPlayer(APP.currentVidID, "pauseVideo");
-		});
+        $('.vid-back').on('click', function() {
+            APP.currentVidID = $(this).parent().siblings('.car-vid-container').attr('id');
+            $(this).parent().parent().toggleClass('vid-on');
+            if (automatic) {
+                callPlayer(APP.currentVidID, "playVideo");
+            }
+        });
 
-		// If slide is changed, pause the video.
-		Reveal.addEventListener( 'slidechanged', function( event ) {
-		    callPlayer(APP.currentVidID, "pauseVideo");
-		} );
-	},
+        $('.img-back').on('click', function() {
+            APP.currentVidID = $(this).parent().siblings('.car-vid-container').attr('id');
+
+            $(this).parent().parent().toggleClass('vid-on');
+            if (automatic) {
+                callPlayer(APP.currentVidID, "pauseVideo");
+            }
+        });
+
+        // If slide is changed, pause the video.
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+            if (automatic) {
+                callPlayer(APP.currentVidID, "pauseVideo");
+            }
+        } );
+    },
 
     hideSwipe: function() {
         var hidden = false;
