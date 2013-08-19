@@ -379,7 +379,7 @@ body {
 		border-right-width: 22px;
 		border-right-color: $orange;
 
-		@media screen and (max-width:400px) {
+		@media screen and (max-device-width: 940px) {
 			display: none !important;
 		}
 	}
@@ -394,7 +394,7 @@ body {
 		border-left-width: 22px;
 		border-left-color: $orange;
 
-		@media screen and (max-width:400px) {
+		@media screen and (max-device-width: 940px) {
 			display: none !important;
 		}
 	}

@@ -3,6 +3,7 @@ var APP = {
 		this.ytAPI();
 		this.navToggle();
 		this.vidToggle();
+        this.hideSwipe();
 	},
 
 	navToggle: function() {
@@ -51,6 +52,16 @@ var APP = {
 		    callPlayer(APP.currentVidID, "pauseVideo");
 		} );
 	},
+
+    hideSwipe: function() {
+        var hidden = false;
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+            if (!hidden) {
+                $('.mobile-swipe').hide();
+                hidden = true;
+            }
+        } );
+    }
 };
 
 /**
