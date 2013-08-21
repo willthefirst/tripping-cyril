@@ -64,10 +64,13 @@
 		background-color: white;
 		left: 0;
 		right: 0;
-		padding: 30px;
+		padding: 60px 30px;
 		font-size: 24px;
 
-		@media all and (orientation:landscape) {
+		@media only screen
+		and (min-device-width : 320px)
+		and (max-device-width : 568px)
+		and (orientation:landscape) {
 			display: block;
 			z-index: 3;
 		}
