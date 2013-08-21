@@ -3,7 +3,7 @@ var APP = {
 		this.ytAPI();
 		this.navToggle();
 		this.vidToggle();
-        this.hideSwipe();
+        // this.hideSwipe();
 	},
 
 	navToggle: function() {
