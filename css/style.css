@@ -1604,7 +1604,7 @@ body {
   min-height: 700px;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 .bg-bot {
   position: absolute;
   bottom: -50px;
@@ -1615,7 +1615,7 @@ body {
   background: url("../images/bg-bot.png") 0 0 no-repeat;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .bg-top {
   position: absolute;
   top: 0;
@@ -1624,7 +1624,7 @@ body {
   background: url("../images/bg-top.png") 0 0 repeat-x;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .logo {
   display: block;
   background: url("../images/logo-gumtree.png") no-repeat;
@@ -1636,7 +1636,7 @@ body {
   height: 76px;
 }
 
-/* line 91, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 a {
   color: #ff4700;
   text-decoration: none;
@@ -1645,12 +1645,12 @@ a {
   -o-transition: color 0.1s linear;
   transition: color 0.1s linear;
 }
-/* line 96, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 a:visited {
   color: #ffbe11;
 }
 
-/* line 101, ../scss/style.scss */
+/* line 102, ../scss/style.scss */
 .references {
   position: absolute;
   bottom: 0;
@@ -1665,34 +1665,34 @@ a:visited {
   height: 126px;
   min-width: 1010px;
 }
-/* line 115, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .references h3 {
   color: #fff;
   font-size: 24px;
   font-family: "deliciousbold", sans-serif;
   display: inline-block;
 }
-/* line 122, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .references ul {
   display: inline-block;
   list-style-type: bullet;
 }
-/* line 127, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 .references .reference-list li {
   padding-bottom: 12px;
   display: inline-block;
   padding-left: 8px;
   position: relative;
 }
-/* line 132, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 .references .reference-list li a {
   color: #fff;
 }
-/* line 136, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .references .reference-list li:first-child:before {
   display: none;
 }
-/* line 140, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 .references .reference-list li:before {
   content: '|';
   position: absolute;
@@ -1700,24 +1700,23 @@ a:visited {
   top: 1px;
   color: #ffef61;
 }
-/* line 149, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .references p {
   color: #fff;
   font-size: 14px;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 .reference-links {
   float: left;
   margin-right: 20px;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 161, ../scss/style.scss */
 .reveal {
   position: relative;
   top: 47px;
   height: 69%;
-  width: 970px;
   margin: auto;
 }
 
