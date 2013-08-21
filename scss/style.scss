@@ -54,7 +54,23 @@
 		font-family: $asap;
 		font-size: 20px;
 		min-height: 700px;
+	}
 
+	.orientation {
+		display: none;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		background-color: white;
+		left: 0;
+		right: 0;
+		padding: 30px;
+		font-size: 24px;
+
+		@media all and (orientation:landscape) {
+			display: block;
+			z-index: 3;
+		}
 	}
 
 	$bg_w: 1500px;
