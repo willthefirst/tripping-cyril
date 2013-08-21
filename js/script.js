@@ -10,13 +10,11 @@ var APP = {
 		$('.nav-toggle').on('click', function() {
 			$(this).toggleClass('off');
 			$('.nav-slider').toggleClass('off');
-            console.log('off');
 		});
 
 		$('.nav-list a').on('click', function() {
 			$('.nav-toggle').toggleClass('off');
 			$('.nav-slider').toggleClass('off');
-            console.log('on');
 		});
 	},
 
